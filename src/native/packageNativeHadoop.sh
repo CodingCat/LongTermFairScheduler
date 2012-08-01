@@ -46,7 +46,7 @@ then
   done
 fi
 
-# Copy the custom-built libraries in $BUILD_DIR
+# Copy the custom-built libraries in $BUILD_NATIVE_DIR
 if [ -d $BUILD_NATIVE_DIR ]
 then 
   for platform in `ls $BUILD_NATIVE_DIR`
@@ -60,6 +60,19 @@ then
     cd $BUILD_NATIVE_DIR/$platform/lib
     $TAR *hadoop* | (cd $DIST_LIB_DIR/$platform/; $UNTAR)
   done  
+fi
+
+if [ "${BUNDLE_SNAPPY_LIB}" = "true" ]
+then
+ if [ -d ${SNAPPY_LIB_DIR} ]
+ then
+   echo "Copying Snappy library in ${SNAPPY_LIB_DIR} to $DIST_LIB_DIR/"
+   cd ${SNAPPY_LIB_DIR}
+   $TAR . | (cd $DIST_LIB_DIR/; $UNTAR)
+ else
+   echo "Snappy lib directory ${SNAPPY_LIB_DIR} does not exist"
+   exit 1
+ fi
 fi
 
 #vim: ts=2: sw=2: et

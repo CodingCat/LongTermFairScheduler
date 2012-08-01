@@ -27,6 +27,7 @@ import java.net.URL;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.core.MediaType;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.BlockLocation;
@@ -197,7 +198,21 @@ public class TestWebHdfsFileSystemContract extends FileSystemContractBaseTest {
   }
 
   public void testSeek() throws IOException {
-    final Path p = new Path("/test/testSeek");
+    final Path dir = new Path("/test/testSeek");
+    assertTrue(fs.mkdirs(dir));
+
+    { //test zero file size
+      final Path zero = new Path(dir, "zero");
+      fs.create(zero).close();
+      
+      int count = 0;
+      final FSDataInputStream in = fs.open(zero);
+      for(; in.read() != -1; count++);
+      in.close();
+      assertEquals(0, count);
+    }
+
+    final Path p = new Path(dir, "file");
     createFile(p);
 
     final int one_third = data.length/3;
@@ -268,7 +283,6 @@ public class TestWebHdfsFileSystemContract extends FileSystemContractBaseTest {
       final FSDataInputStream in = fs.open(root);
       in.read();
       fail();
-      fail();
     } catch(IOException e) {
       WebHdfsFileSystem.LOG.info("This is expected.", e);
     }
@@ -335,6 +349,8 @@ public class TestWebHdfsFileSystemContract extends FileSystemContractBaseTest {
       conn.setRequestMethod(op.getType().toString());
       conn.connect();
       assertEquals(HttpServletResponse.SC_OK, conn.getResponseCode());
+      assertEquals(0, conn.getContentLength());
+      assertEquals(MediaType.APPLICATION_OCTET_STREAM, conn.getContentType());
       assertEquals((short)0755, webhdfs.getFileStatus(dir).getPermission().toShort());
       conn.disconnect();
     }

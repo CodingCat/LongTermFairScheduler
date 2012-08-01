@@ -23,9 +23,7 @@
 
   <property name="name" value="${ant.project.name}"/>
   <property name="root" value="${basedir}"/>
-  <property name="hadoop.root" location="/Users/zhunan/codes/hadoop-1.0.0"/>
-  <property name="eclipse.home" location="/Users/zhunan/eclipse"/>
-  <property name="version" value="1.0.0"/>
+  <property name="hadoop.root" location="${root}/../../../"/>
 
   <!-- Load all the default properties, and any the user wants    -->
   <!-- to contribute (without having to type -D or edit this file -->

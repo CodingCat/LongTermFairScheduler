@@ -84,6 +84,16 @@ public class TestSecurityUtil {
   }
   
   @Test
+  public void testPrincipalsWithLowerCaseHosts() throws IOException {
+    String service = "xyz/";
+    String realm = "@REALM";
+    String principalInConf = service + SecurityUtil.HOSTNAME_PATTERN + realm;
+    String hostname = "FooHost";
+    String principal = service + hostname.toLowerCase() + realm;
+    verify(principalInConf, hostname, principal);
+  }
+  
+  @Test
   public void testLocalHostNameForNullOrWild() throws Exception {
     String local = SecurityUtil.getLocalHostName();
     assertEquals("hdfs/" + local + "@REALM", SecurityUtil.getServerPrincipal(
@@ -200,7 +210,7 @@ public class TestSecurityUtil {
     assertTrue(!addr.isUnresolved());
     // don't know what the standard resolver will return for hostname.
     // should be host for host; host or ip for ip is ambiguous
-    if (!SecurityUtil.getTokenServiceUseIp()) {
+    if (!SecurityUtil.useIpForTokenService) {
       assertEquals(host, addr.getHostName());
       assertEquals(host, addr.getAddress().getHostName());
     }

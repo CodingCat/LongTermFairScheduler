@@ -368,5 +368,9 @@ public class S3FileSystem extends FileSystem {
       final Block[] ret = inode.getBlocks();
       return ret == null ? 0L : ret[0].getLength();
     }
+    
+	public String getOwner() {
+		return System.getProperty("user.name");
+	}
   }
 }

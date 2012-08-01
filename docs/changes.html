@@ -36,7 +36,7 @@
     function collapse() {
       for (var i = 0; i < document.getElementsByTagName("ul").length; i++) {
         var list = document.getElementsByTagName("ul")[i];
-        if (list.id != 'release_1.0.0_-_2011.11.27_' && list.id != 'release_0.20.205.0_-_2011.10.06_') {
+        if (list.id != 'release_1.0.3_-_2012.05.07_' && list.id != 'release_1.0.2_-_2012.03.24_') {
           list.style.display = "none";
         }
       }
@@ -52,20 +52,192 @@
 <a href="http://hadoop.apache.org/core/"><img class="logoImage" alt="Hadoop" src="images/hadoop-logo.jpg" title="Scalable Computing Platform"></a>
 <h1>Hadoop Change Log</h1>
 
-<h2><a href="javascript:toggleList('release_1.0.0_-_2011.11.27_')">Release 1.0.0 - 2011.11.27
+<h2><a href="javascript:toggleList('release_1.0.3_-_2012.05.07_')">Release 1.0.3 - 2012.05.07
 </a></h2>
-<ul id="release_1.0.0_-_2011.11.27_">
-  <li><a href="javascript:toggleList('release_1.0.0_-_2011.11.27_._new_features_')">  NEW FEATURES
+<ul id="release_1.0.3_-_2012.05.07_">
+  <li><a href="javascript:toggleList('release_1.0.3_-_2012.05.07_._new_features_')">  NEW FEATURES
+</a>&nbsp;&nbsp;&nbsp;(none)
+    <ol id="release_1.0.3_-_2012.05.07_._new_features_">
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_1.0.3_-_2012.05.07_._improvements_')">  IMPROVEMENTS
+</a>&nbsp;&nbsp;&nbsp;(1)
+    <ol id="release_1.0.3_-_2012.05.07_._improvements_">
+      <li>MAPREDUCE-4017. Add jobname to jobsummary log<br />(tgraves and Koji Noguchi
+via bobby)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_1.0.3_-_2012.05.07_._bug_fixes_')">  BUG FIXES
+</a>&nbsp;&nbsp;&nbsp;(28)
+    <ol id="release_1.0.3_-_2012.05.07_._bug_fixes_">
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-6924">HADOOP-6924</a>. Adds a directory to the list of directories to search for
+the libjvm.so file. The new directory is found by running a 'find' command
+and the first output is taken. This was done to handle the build of Hadoop
+with IBM's JDK.<br />(Stephen Watt, Guillermo Cabrera and ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-6941">HADOOP-6941</a>. Adds support for building Hadoop with IBM's JDK<br />(Stephen Watt, Eli and ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8188">HADOOP-8188</a>. Fixes the build process to do with jsvc, with IBM's JDK
+as the underlying jdk.<br />(ddas)</li>
+      <li>HDFS-3127. Do not throw exceptions when FSImage.restoreStorageDirs()
+fails.<br />(Brandon Li via szetszwo)</li>
+      <li>MAPREDUCE-3377. Ensure OutputCommitter.checkOutputSpecs is called prior to
+copying job.xml.<br />(Jane Chen via acmurthy)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-5528">HADOOP-5528</a>. Ensure BinaryPartitioner is present in mapred libs.<br />(Klaas
+Bosteels via acmurthy)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-6963">HADOOP-6963</a>. In FileUtil.getDU(..), neither include the size of directories
+nor follow symbolic links.<br />(Ravi Prakash via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8251">HADOOP-8251</a>. Fix SecurityUtil.fetchServiceTicket after <a href="http://issues.apache.org/jira/browse/HADOOP-6941">HADOOP-6941</a>.<br />(todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8293">HADOOP-8293</a>. Fix the Makefile.am for the native library to include the
+JNI path.<br />(omalley)</li>
+      <li>MAPREDUCE-4154. streaming MR job succeeds even if the streaming command
+fails.<br />(Devaraj Das via tgraves)</li>
+      <li>HDFS-119. Fix a bug in logSync(), which causes NameNode block forever.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8294">HADOOP-8294</a>. IPC Connection becomes unusable even if server address
+was temporarilly unresolvable. Backport of <a href="http://issues.apache.org/jira/browse/HADOOP-7428">HADOOP-7428</a>.<br />(Kihwal Lee via
+mattf)</li>
+      <li>HDFS-3310. Make sure that we abort when no edit log directories are left.<br />(Colin Patrick McCabe via eli)</li>
+      <li>MAPREDUCE-4207. Remove System.out.println() in FileInputFormat<br />(Kihwal Lee via harsh)</li>
+      <li>HDFS-3265. PowerPc Build error.<br />(Kumar Ravi via mattf)</li>
+      <li>HDFS-1041. DFSClient.getFileChecksum(..) should retry if connection to
+the first datanode fails.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8338">HADOOP-8338</a>. Fix renew and cancel of RPC HDFS delegation tokens.<br />(omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8346">HADOOP-8346</a>. Makes oid changes to make SPNEGO work. Was broken due
+to fixes introduced by the IBM JDK compatibility patch.<br />(ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8352">HADOOP-8352</a>. Regenerate configure scripts for the c++ compilation.<br />(omalley)</li>
+      <li>HDFS-3061. Cached directory size in INodeDirectory can get permanently
+out of sync with computed size, causing quota issues; port of HDFS-1487.<br />(Kihwal Lee via mattf)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7381">HADOOP-7381</a>. FindBugs OutOfMemoryError.<br />(Joep Rottinghuis via mattf)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8151">HADOOP-8151</a>. Error handling in snappy decompressor throws invalid
+exceptions.<br />(Matt Foley)</li>
+      <li>HDFS-3374. hdfs' TestDelegationToken fails intermittently with a race
+condition.<br />(Owen O'Malley via mattf)</li>
+      <li>MAPREDUCE-3857. Grep example ignores mapred.job.queue.name.<br />(Jonathan Eagles via mattf)</li>
+      <li>MAPREDUCE-1238. mapred metrics shows negative count of waiting maps and
+reduces<br />(tgraves via bobby)</li>
+      <li>MAPREDUCE-4003. log.index (No such file or directory) AND Task process
+exit with nonzero status of 126.<br />(Koji Noguchi via tgraves)</li>
+      <li>MAPREDUCE-4012. Hadoop Job setup error leaves no useful info to users
+(when LinuxTaskController is used)<br />(tgraves)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8027">HADOOP-8027</a>. Visiting /jmx on the daemon web interfaces may print unnecessary
+error in logs<br />(Aaron Myers and Hitesh Shah)</li>
+    </ol>
+  </li>
+</ul>
+<h2><a href="javascript:toggleList('release_1.0.2_-_2012.03.24_')">Release 1.0.2 - 2012.03.24
+</a></h2>
+<ul id="release_1.0.2_-_2012.03.24_">
+  <li><a href="javascript:toggleList('release_1.0.2_-_2012.03.24_._new_features_')">  NEW FEATURES
+</a>&nbsp;&nbsp;&nbsp;(3)
+    <ol id="release_1.0.2_-_2012.03.24_._new_features_">
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7206">HADOOP-7206</a>. Support Snappy compression. (Issei Yoshida and
+Alejandro Abdelnur via vinodkv).
+</li>
+      <li>HDFS-2701. Cleanup FS* processIOError methods.<br />(eli)</li>
+      <li>HDFS-2978. The NameNode should expose name dir statuses via JMX.<br />(atm)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_1.0.2_-_2012.03.24_._improvements_')">  IMPROVEMENTS
+</a>&nbsp;&nbsp;&nbsp;(4)
+    <ol id="release_1.0.2_-_2012.03.24_._improvements_">
+      <li>MAPREDUCE-3773. Add queue metrics with buckets for job run times.<br />(omalley
+via acmurthy)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-1722">HADOOP-1722</a>. Allow hadoop streaming to handle non-utf8 byte array.<br />(Klaas
+Bosteels and Matthias Lehmann via acmurthy)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-5450">HADOOP-5450</a>. Add support for application-specific typecodes to typed
+bytes.<br />(Klaas Bosteels via acmurthy)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8090">HADOOP-8090</a>. rename hadoop 64 bit rpm/deb package name.<br />(Giridharan Kesavan
+via mattf)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_1.0.2_-_2012.03.24_._bug_fixes_')">  BUG FIXES
+</a>&nbsp;&nbsp;&nbsp;(13)
+    <ol id="release_1.0.2_-_2012.03.24_._bug_fixes_">
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8050">HADOOP-8050</a>. Deadlock in metrics.<br />(Kihwal Lee via mattf)</li>
+      <li>MAPREDUCE-3824. Distributed caches are not removed properly.<br />(Thomas Graves
+via mattf)</li>
+      <li>MAPREDUCE-3583. Change pid to String and stime to BigInteger in order to
+avoid NumberFormatException caused by overflow.<br />(Zhihong Yu via szetszwo)</li>
+      <li>HDFS-3006. In WebHDFS, when the return body is empty, set the Content-Type
+to application/octet-stream instead of application/json.<br />(szetszwo)</li>
+      <li>MAPREDUCE-764. Fix TypedBytesInput.readRaw to preserve custom type codes.<br />(Klaas Bosteels via acmurthy)</li>
+      <li>HDFS-2703. removedStorageDirs is not updated everywhere we remove
+a storage dir.<br />(eli)</li>
+      <li>HDFS-2702. A single failed name dir can cause the NN to exit.<br />(eli)</li>
+      <li>HDFS-3075. Backport <a href="http://issues.apache.org/jira/browse/HADOOP-4885">HADOOP-4885</a>: Try to restore failed name-node storage
+directories at checkpoint time.<br />(Brandon Li via szetszwo)</li>
+      <li>HDFS-3101. Cannot read empty file using WebHDFS.<br />(szetszwo)</li>
+      <li>MAPREDUCE-3851.  Allow more aggressive action on detection of the jetty
+issue<br />(tgraves via bobby)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8088">HADOOP-8088</a>. User-group mapping cache incorrectly does negative caching on
+transient failures<br />(Kihwal Lee via bobby)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8132">HADOOP-8132</a>. 64bit secure datanodes do not start as the jsvc path is wrong<br />(Arpit Gupta via mattf)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8201">HADOOP-8201</a>. create the configure script for native compilation as part of
+the build<br />(Giri Kesavan via mattf)</li>
+    </ol>
+  </li>
+</ul>
+<h2><a href="javascript:toggleList('older')">Older Releases</a></h2>
+<ul id="older">
+<h3><a href="javascript:toggleList('release_1.0.1_-_2012.02.14_')">Release 1.0.1 - 2012.02.14
+</a></h3>
+<ul id="release_1.0.1_-_2012.02.14_">
+  <li><a href="javascript:toggleList('release_1.0.1_-_2012.02.14_._new_features_')">  NEW FEATURES
+</a>&nbsp;&nbsp;&nbsp;(none)
+    <ol id="release_1.0.1_-_2012.02.14_._new_features_">
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_1.0.1_-_2012.02.14_._improvements_')">  IMPROVEMENTS
+</a>&nbsp;&nbsp;&nbsp;(8)
+    <ol id="release_1.0.1_-_2012.02.14_._improvements_">
+      <li>MAPREDUCE-3607. Port missing new API mapreduce lib classes to
+1.x.<br />(tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7987">HADOOP-7987</a>. Support setting the run-as user in unsecure mode.<br />(jitendra)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7988">HADOOP-7988</a>. Upper case in hostname part of the principals doesn't
+work with kerberos.<br />(jitendra)</li>
+      <li>HDFS-2814. NamenodeMXBean does not account for svn revision in the version
+information.<br />(Hitesh Shah via jitendra)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7470">HADOOP-7470</a>. Move up to Jackson 1.8.8.<br />(Enis Soztutar via szetszwo)</li>
+      <li>HDFS-2379. Allow block reports to proceed without holding FSDataset lock.<br />(todd via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8009">HADOOP-8009</a>. Create hadoop-client and hadoop-minicluster artifacts for
+downstream projects.<br />(Alejandro Abdelnur via mattf)</li>
+      <li>MAPREDUCE-3184. Add a thread to the TaskTracker which monitors for
+spinning Jetty selector threads, and shuts down the daemon when one is
+detected.<br />(todd)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_1.0.1_-_2012.02.14_._bug_fixes_')">  BUG FIXES
+</a>&nbsp;&nbsp;&nbsp;(6)
+    <ol id="release_1.0.1_-_2012.02.14_._bug_fixes_">
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7960">HADOOP-7960</a>. Port <a href="http://issues.apache.org/jira/browse/HADOOP-5203">HADOOP-5203</a> to branch-1, build version comparison is too
+restrictive.<br />(mattf)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7964">HADOOP-7964</a>. Deadlock in NetUtils and SecurityUtil class initialization.<br />(Daryn Sharp via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8010">HADOOP-8010</a>. hadoop-config.sh errors when HADOOP_HOME_WARN_SUPPRESS is set
+to true and HADOOP_HOME is present.<br />(Roman Shaposhnik via mattf)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8052">HADOOP-8052</a>. Hadoop Metrics2 should emit Float.MAX_VALUE (instead of
+Double.MAX_VALUE) to avoid making Ganglia's gmetad core.<br />(Varun Kapoor
+via mattf)</li>
+      <li>MAPREDUCE-3343. TaskTracker Out of Memory because of distributed cache.
+(Zhao Yunjiong).
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-8037">HADOOP-8037</a>. Binary tarball does not preserve platform info for
+native builds, and RPMs fail to provide needed symlinks for
+libhadoop.so.<br />(Matt Foley)</li>
+    </ol>
+  </li>
+</ul>
+<h3><a href="javascript:toggleList('release_1.0.0_-_2011.12.15_')">Release 1.0.0 - 2011.12.15
+</a></h3>
+<ul id="release_1.0.0_-_2011.12.15_">
+  <li><a href="javascript:toggleList('release_1.0.0_-_2011.12.15_._new_features_')">  NEW FEATURES
 </a>&nbsp;&nbsp;&nbsp;(2)
-    <ol id="release_1.0.0_-_2011.11.27_._new_features_">
+    <ol id="release_1.0.0_-_2011.12.15_._new_features_">
       <li>HDFS-2316. [umbrella] WebHDFS: a complete FileSystem implementation for
 accessing HDFS over HTTP<br />(szetszwo)</li>
       <li>HDFS-2539. Support doAs and GETHOMEDIRECTORY in WebHDFS.<br />(szetszwo)</li>
     </ol>
   </li>
-  <li><a href="javascript:toggleList('release_1.0.0_-_2011.11.27_._improvements_')">  IMPROVEMENTS
+  <li><a href="javascript:toggleList('release_1.0.0_-_2011.12.15_._improvements_')">  IMPROVEMENTS
 </a>&nbsp;&nbsp;&nbsp;(16)
-    <ol id="release_1.0.0_-_2011.11.27_._improvements_">
+    <ol id="release_1.0.0_-_2011.12.15_._improvements_">
       <li>HDFS-2427. Change the default permission in WebHDFS to 755 and add range
 check/validation for all parameters.<br />(szetszwo)</li>
       <li>HDFS-2501. Add version prefix and root methods to WebHDFS.<br />(szetszwo)</li>
@@ -93,9 +265,9 @@ configuration section in the forrest doc.<br />(szetszwo)</li>
 updating of version numbers in the doc system.<br />(szetszwo via mattf)</li>
     </ol>
   </li>
-  <li><a href="javascript:toggleList('release_1.0.0_-_2011.11.27_._bug_fixes_')">  BUG FIXES
+  <li><a href="javascript:toggleList('release_1.0.0_-_2011.12.15_._bug_fixes_')">  BUG FIXES
 </a>&nbsp;&nbsp;&nbsp;(33)
-    <ol id="release_1.0.0_-_2011.11.27_._bug_fixes_">
+    <ol id="release_1.0.0_-_2011.12.15_._bug_fixes_">
       <li>HDFS-2673. While Namenode processing the blocksBeingWrittenReport,
 it will log incorrect number blocks count.<br />(Uma Maheswara via mattf)</li>
       <li>MAPREDUCE-3319. Hadoop example "multifilewc" broken in 0.20.205.0.<br />(Subroto Sanyal via mattf)</li>
@@ -104,8 +276,9 @@ it will log incorrect number blocks count.<br />(Uma Maheswara via mattf)</li>
       <li><a href="http://issues.apache.org/jira/browse/HADOOP-7869">HADOOP-7869</a>. HADOOP_HOME warning happens all of the time<br />(Owen O'Malley
 via mattf)</li>
       <li><a href="http://issues.apache.org/jira/browse/HADOOP-7815">HADOOP-7815</a>. Fixed configuring map memory mb in hadoop-setup-conf.sh.<br />(Ramya Sunil)</li>
-      <li>HDFS-2346. TestHost2NodesMap &amp; TestReplicasMap will fail depending upon
-execution order of test methods.<br />(Laxman and Uma Maheswara Rao via Matt Foley)</li>
+      <li>HDFS-2346. TestHost2NodesMap &amp; TestReplicasMap will fail depending
+upon execution order of test methods.<br />(Laxman and Uma Maheswara
+Rao via Matt Foley)</li>
       <li>MAPREDUCE-3374. src/c++/task-controller/configure is not set executable in
 the tarball and that prevents task-controller from rebuilding.<br />(Roman Shaposhnik via Matt Foley)</li>
       <li>HDFS-1943. Fail to start datanode while start-dfs.sh is executed by root
@@ -150,7 +323,8 @@ by <a href="http://issues.apache.org/jira/browse/HADOOP-5124">HADOOP-5124</a>.<b
 blocks to delete.<br />(Zheng Shao via jitendra)</li>
       <li><a href="http://issues.apache.org/jira/browse/HADOOP-7853">HADOOP-7853</a>. multiple javax security configurations cause conflicts.<br />(Daryn via jitendra)</li>
       <li>HDFS-2590. Fix the missing links in the WebHDFS forrest doc.<br />(szetszwo)</li>
-      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7854">HADOOP-7854</a>. UGI getCurrentUser is not synchronized.<br />(Daryn Sharp via jitendra)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7854">HADOOP-7854</a>. UGI getCurrentUser is not synchronized.<br />(Daryn Sharp
+via jitendra)</li>
       <li><a href="http://issues.apache.org/jira/browse/HADOOP-7865">HADOOP-7865</a>. Test Failures in 1.0 hdfs/common.<br />(jitendra)</li>
       <li>MAPREDUCE-3480. Disable TestJvmReuse in branch-1.<br />(jitendra)</li>
       <li><a href="http://issues.apache.org/jira/browse/HADOOP-7855">HADOOP-7855</a>. fix to remove datanode dir creation and attribute
@@ -159,8 +333,8 @@ setup from hadoop-conf-setup.sh<br />(gkesavan)</li>
     </ol>
   </li>
 </ul>
-<h2><a href="javascript:toggleList('release_0.20.205.0_-_2011.10.06_')">Release 0.20.205.0 - 2011.10.06
-</a></h2>
+<h3><a href="javascript:toggleList('release_0.20.205.0_-_2011.10.06_')">Release 0.20.205.0 - 2011.10.06
+</a></h3>
 <ul id="release_0.20.205.0_-_2011.10.06_">
   <li><a href="javascript:toggleList('release_0.20.205.0_-_2011.10.06_._new_features_')">  NEW FEATURES
 </a>&nbsp;&nbsp;&nbsp;(17)
@@ -190,8 +364,8 @@ tokens.<br />(szetszwo)</li>
       <li>HDFS-2340. Support getFileBlockLocations and getDelegationToken in WebHDFS.<br />(szetszwo)</li>
       <li>HDFS-2348. Support getContentSummary and getFileChecksum in WebHDFS.<br />(szetszwo)</li>
       <li>HDFS-2385. Support renew and cancel delegation tokens in WebHDFS.<br />(szetszwo)</li>
-      <li>MAPREDUCE-2777. Backport of MAPREDUCE-220 and MAPREDUCE-2469. Includes adding
-cumulative CPU usage and total heap usage to task conters.<br />(amarrk)</li>
+      <li>MAPREDUCE-2777. Backport of MAPREDUCE-220 and MAPREDUCE-2469. Includes
+adding cumulative CPU usage and total heap usage to task conters.<br />(amarrk)</li>
     </ol>
   </li>
   <li><a href="javascript:toggleList('release_0.20.205.0_-_2011.10.06_._bug_fixes_')">  BUG FIXES
@@ -202,15 +376,16 @@ cumulative CPU usage and total heap usage to task conters.<br />(amarrk)</li>
       <li>MAPREDUCE-3112. Calling hadoop cli inside mapreduce job leads to errors.<br />(Eric Yang via mattf)</li>
       <li><a href="http://issues.apache.org/jira/browse/HADOOP-7691">HADOOP-7691</a>. Hadoop deb pkg group id.<br />(Eric Yang via mattf)</li>
       <li><a href="http://issues.apache.org/jira/browse/HADOOP-7685">HADOOP-7685</a>. Resolve issues with hadoop-common file hadoop-setup-conf.sh.<br />(Eric Yang and Devaraj K, via mattf)</li>
-      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7684">HADOOP-7684</a>. jobhistory server and secondarynamenode should have init.d script
-for rpm and deb.<br />(Eric Yang via mattf)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7684">HADOOP-7684</a>. jobhistory server and secondarynamenode should have
+init.d script for rpm and deb.<br />(Eric Yang via mattf)</li>
       <li><a href="http://issues.apache.org/jira/browse/HADOOP-7683">HADOOP-7683</a>. remove hdfs-site.xml template has properties that are not used
 in 0.20-security.<br />(Arpit Gupta via mattf)</li>
       <li><a href="http://issues.apache.org/jira/browse/HADOOP-7603">HADOOP-7603</a>. Set default hdfs, mapred uid, and hadoop group gid for RPM
 packages.<br />(Eric Yang via mattf)</li>
       <li><a href="http://issues.apache.org/jira/browse/HADOOP-7681">HADOOP-7681</a>. log4j.properties is missing properties for security audit and
 hdfs audit should be changed to info.<br />(Arpit Gupta via mattf)</li>
-      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7679">HADOOP-7679</a>. log4j.properties templates must define mapred.jobsummary.logger<br />(Ramya Sunil via mattf)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7679">HADOOP-7679</a>. log4j.properties templates must define
+mapred.jobsummary.logger<br />(Ramya Sunil via mattf)</li>
       <li>HDFS-2325. Fuse-DFS fails to build on Hadoop 20.203.0<br />(Kihwal Lee via mattf)</li>
       <li>HDFS-2342. add Jersey libraries to ivy.xml files in contrib, to fix
 TestSleepJob and TestHdfsProxy. (Tsz Wo (Nicholas), SZE via mattf)
@@ -332,8 +507,8 @@ are not being respected.<br />(jitendra)</li>
 </a>&nbsp;&nbsp;&nbsp;(35)
     <ol id="release_0.20.205.0_-_2011.10.06_._improvements_">
       <li>MAPREDUCE-2928. MR-2413 improvements<br />(Eli Collins via mattf)</li>
-      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7655">HADOOP-7655</a>. provide a small validation script that smoke tests the installed
-cluster.<br />(Arpit Gupta via mattf)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7655">HADOOP-7655</a>. provide a small validation script that smoke tests
+the installed cluster.<br />(Arpit Gupta via mattf)</li>
       <li>MAPREDUCE-2187. Reporter sends progress during sort/merge.<br />(Anupam Seth via
 acmurthy)</li>
       <li>MAPREDUCE-2705. Implements launch of multiple tasks concurrently.<br />(Thomas Graves via ddas)</li>
@@ -387,8 +562,6 @@ user to setup config script.<br />(Arpit Gupta via Eric Yang)</li>
     </ol>
   </li>
 </ul>
-<h2><a href="javascript:toggleList('older')">Older Releases</a></h2>
-<ul id="older">
 <h3><a href="javascript:toggleList('release_0.20.204.0_-_2011-8-25_')">Release 0.20.204.0 - 2011-8-25
 </a></h3>
 <ul id="release_0.20.204.0_-_2011-8-25_">

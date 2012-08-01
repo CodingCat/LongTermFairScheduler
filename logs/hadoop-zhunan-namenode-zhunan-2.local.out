@@ -1,0 +1,3 @@
+2012-07-31 10:27:59.037:INFO::Logging to STDERR via org.mortbay.log.StdErrLog
+2012-07-31 10:27:59.389:INFO::jetty-6.1.26
+2012-07-31 10:28:00.619:INFO::Started SelectChannelConnector@0.0.0.0:50070

@@ -4,5 +4,12 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-
+	<property>
+		<name>fs.default.name</name>
+		<value>hdfs://localhost:9000</value>
+	</property>
+	<property>
+		<name>hadoop.tmp.dir</name>
+		<value>/Users/zhunan/codes/hadoop/</value>
+	</property>
 </configuration>

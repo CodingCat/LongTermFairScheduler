@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+	<property>
+		<name>fs.default.name</name>
+		<value>hdfs://localhost:9000</value>
+	</property>
+	<property>
+		<name>hadoop.tmp.dir</name>
+		<value>/Users/zhunan/codes/hadoop/</value>
+	</property>
+	<property>
+		<name>mapred.tasktracker.map.tasks.maximum</name>
+		<value>4</value>
+	</property>
+	<property>
+		<name>mapred.tasktracker.reduce.tasks.maximum</name>
+		<value>4</value>
+	</property>
+	<property>
+		<name>mapred.jobtracker.taskScheduler</name>
+		<value>org.apache.hadoop.mapred.FairScheduler</value>
+	</property>
+	<property>
+		<name>mapred.fairscheduler.preemption</name>
+		<value>true</value>
+	</property>
+</configuration>

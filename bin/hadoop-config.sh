@@ -19,6 +19,8 @@
 
 # resolve links - $0 may be a softlink
 
+JAVA_HOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+
 this="${BASH_SOURCE-$0}"
 common_bin=$(cd -P -- "$(dirname -- "$this")" && pwd -P)
 script="$(basename -- "$this")"
@@ -70,7 +72,7 @@ if [ -f "${HADOOP_CONF_DIR}/hadoop-env.sh" ]; then
   . "${HADOOP_CONF_DIR}/hadoop-env.sh"
 fi
 
-if [ "$HADOOP_HOME_WARN_SUPPRESS" == "" ] && [ "$HADOOP_HOME" != "" ]; then
+if [ "$HADOOP_HOME_WARN_SUPPRESS" = "" ] && [ "$HADOOP_HOME" != "" ]; then
   echo "Warning: \$HADOOP_HOME is deprecated." 1>&2
   echo 1>&2
 fi

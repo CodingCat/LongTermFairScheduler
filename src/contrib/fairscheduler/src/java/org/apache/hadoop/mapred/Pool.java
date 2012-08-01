@@ -20,6 +20,7 @@ package org.apache.hadoop.mapred;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Map;
 
 import org.apache.hadoop.mapreduce.TaskType;
 import org.apache.hadoop.metrics.MetricsContext;
@@ -42,7 +43,10 @@ public class Pool {
 
   private PoolSchedulable mapSchedulable;
   private PoolSchedulable reduceSchedulable;
-
+  
+  private long mapCredit = 0;
+  private long reduceCredit = 0;
+  
   public Pool(FairScheduler scheduler, String name) {
     this.name = name;
     mapSchedulable = new PoolSchedulable(scheduler, this, TaskType.MAP);
@@ -85,6 +89,7 @@ public class Pool {
     return mapSchedulable;
   }
   
+  
   public PoolSchedulable getReduceSchedulable() {
     return reduceSchedulable;
   }
@@ -96,5 +101,28 @@ public class Pool {
   public void updateMetrics() {
     mapSchedulable.updateMetrics();
     reduceSchedulable.updateMetrics();
+  }
+
+  public int getRunningTasks(TaskType ttype){
+	PoolSchedulable taskSchedulable = (ttype == TaskType.MAP ? mapSchedulable : reduceSchedulable);
+	return taskSchedulable.getRunningTasks();
+  }
+  
+  public int getDemand(TaskType ttype){
+	PoolSchedulable taskSchedulable = (ttype == TaskType.MAP ? mapSchedulable : reduceSchedulable);
+	return taskSchedulable.getDemand();
+  }
+  
+  public void updateCredit(TaskType ttype, long l){
+	  if (ttype == TaskType.MAP){
+		  this.mapCredit = l;
+	  }
+	  if (ttype == TaskType.REDUCE){
+		  this.reduceCredit = l;
+	  }
+  }
+  
+  public long getCredit(TaskType ttype){
+	  return ((ttype == TaskType.MAP ? this.mapCredit : this.reduceCredit));
   }
 }

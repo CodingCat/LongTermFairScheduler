@@ -56,7 +56,8 @@ public class JobControl implements Runnable{
 	
   private long nextJobID;
   private String groupName;
-	
+  
+  
   /** 
    * Construct a job control for a group of jobs.
    * @param groupName a name identifying this group

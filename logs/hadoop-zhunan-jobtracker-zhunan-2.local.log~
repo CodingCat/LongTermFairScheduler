@@ -1,0 +1,337 @@
+2012-07-31 09:54:40,198 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = zhunan-2.local/192.168.1.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4-SNAPSHOT
+STARTUP_MSG:   build =  -r ; compiled by 'zhunan' on Fri Jul  6 04:20:51 CST 2012
+************************************************************/
+2012-07-31 09:54:40,790 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2012-07-31 09:54:40,836 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2012-07-31 09:54:40,852 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2012-07-31 09:54:40,852 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: JobTracker metrics system started
+2012-07-31 09:54:41,596 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source QueueMetrics,q=default registered.
+2012-07-31 09:54:42,533 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2012-07-31 09:54:42,533 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2012-07-31 09:54:42,535 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2012-07-31 09:54:42,553 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2012-07-31 09:54:42,553 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2012-07-31 09:54:42,554 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-07-31 09:54:42,555 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2012-07-31 09:54:42,568 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as zhunan
+2012-07-31 09:54:42,705 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2012-07-31 09:54:42,709 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort9001 registered.
+2012-07-31 09:54:42,709 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort9001 registered.
+2012-07-31 09:54:43,058 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2012-07-31 09:54:43,568 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2012-07-31 09:54:43,570 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2012-07-31 09:54:43,570 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2012-07-31 09:54:44,992 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2012-07-31 09:54:44,993 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source JobTrackerMetrics registered.
+2012-07-31 09:54:44,994 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2012-07-31 09:54:44,994 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2012-07-31 09:54:45,361 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-07-31 09:54:45,367 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost:9000/Users/zhunan/codes/hadoop/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /Users/zhunan/codes/hadoop/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 27 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1994)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1974)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:792)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:563)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1388)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1384)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1382)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1070)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:828)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:234)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2410)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2192)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2186)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:300)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:291)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4978)
+2012-07-31 09:54:55,374 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-07-31 09:54:55,377 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost:9000/Users/zhunan/codes/hadoop/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /Users/zhunan/codes/hadoop/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 17 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1994)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1974)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:792)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:563)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1388)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1384)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1382)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1070)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:828)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:234)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2410)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2192)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2186)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:300)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:291)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4978)
+2012-07-31 09:55:05,416 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-07-31 09:55:05,423 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost:9000/Users/zhunan/codes/hadoop/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /Users/zhunan/codes/hadoop/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 7 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1994)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1974)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:792)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:563)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1388)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1384)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1382)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1070)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:828)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:234)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2410)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2192)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2186)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:300)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:291)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4978)
+2012-07-31 09:55:15,428 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-07-31 09:55:15,567 INFO org.apache.hadoop.mapred.JobTracker: History server being initialized in embedded mode
+2012-07-31 09:55:15,579 INFO org.apache.hadoop.mapred.JobHistoryServer: Started job history server at: localhost:50030
+2012-07-31 09:55:15,579 INFO org.apache.hadoop.mapred.JobTracker: Job History Server web address: localhost:50030
+2012-07-31 09:55:15,605 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2012-07-31 09:55:15,882 INFO org.apache.hadoop.mapred.JobTracker: Refreshing hosts information
+2012-07-31 09:55:15,911 INFO org.apache.hadoop.util.HostsFileReader: Setting the includes file to 
+2012-07-31 09:55:15,911 INFO org.apache.hadoop.util.HostsFileReader: Setting the excludes file to 
+2012-07-31 09:55:15,911 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2012-07-31 09:55:15,911 INFO org.apache.hadoop.mapred.JobTracker: Decommissioning 0 nodes
+2012-07-31 09:55:15,912 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-07-31 09:55:15,913 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 9001: starting
+2012-07-31 09:55:15,920 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 9001: starting
+2012-07-31 09:55:15,921 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 9001: starting
+2012-07-31 09:55:15,925 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 9001: starting
+2012-07-31 09:55:15,925 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 9001: starting
+2012-07-31 09:55:15,927 INFO org.apache.hadoop.ipc.Server: IPC Server handler 4 on 9001: starting
+2012-07-31 09:55:15,928 INFO org.apache.hadoop.ipc.Server: IPC Server handler 5 on 9001: starting
+2012-07-31 09:55:15,928 INFO org.apache.hadoop.ipc.Server: IPC Server handler 6 on 9001: starting
+2012-07-31 09:55:15,928 INFO org.apache.hadoop.ipc.Server: IPC Server handler 7 on 9001: starting
+2012-07-31 09:55:15,928 INFO org.apache.hadoop.ipc.Server: IPC Server handler 8 on 9001: starting
+2012-07-31 09:55:15,928 INFO org.apache.hadoop.mapred.JobTracker: Starting RUNNING
+2012-07-31 09:55:15,928 INFO org.apache.hadoop.ipc.Server: IPC Server handler 9 on 9001: starting
+2012-07-31 09:55:20,099 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/192.168.1.100
+2012-07-31 09:55:20,103 INFO org.apache.hadoop.mapred.JobTracker: Adding tracker tracker_192.168.1.100:localhost/127.0.0.1:53490 to host 192.168.1.100
+2012-07-31 09:56:30,812 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at zhunan-2.local/192.168.1.100
+************************************************************/
+2012-07-31 09:57:52,290 INFO org.apache.hadoop.mapred.JobTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting JobTracker
+STARTUP_MSG:   host = zhunan-2.local/192.168.1.100
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 1.0.4-SNAPSHOT
+STARTUP_MSG:   build =  -r ; compiled by 'zhunan' on Fri Jul  6 04:20:51 CST 2012
+************************************************************/
+2012-07-31 09:57:52,736 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2012-07-31 09:57:52,794 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source MetricsSystem,sub=Stats registered.
+2012-07-31 09:57:52,846 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2012-07-31 09:57:52,846 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: JobTracker metrics system started
+2012-07-31 09:57:53,287 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source QueueMetrics,q=default registered.
+2012-07-31 09:57:54,613 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source ugi registered.
+2012-07-31 09:57:54,613 WARN org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Source name ugi already exists!
+2012-07-31 09:57:54,615 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2012-07-31 09:57:54,617 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Starting expired delegation token remover thread, tokenRemoverScanInterval=60 min(s)
+2012-07-31 09:57:54,618 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2012-07-31 09:57:54,618 INFO org.apache.hadoop.mapred.JobTracker: Scheduler configured with (memSizeForMapSlotOnJT, memSizeForReduceSlotOnJT, limitMaxMemForMapTasks, limitMaxMemForReduceTasks) (-1, -1, -1, -1)
+2012-07-31 09:57:54,619 INFO org.apache.hadoop.util.HostsFileReader: Refreshing hosts (include/exclude) list
+2012-07-31 09:57:54,638 INFO org.apache.hadoop.mapred.JobTracker: Starting jobtracker with owner as zhunan
+2012-07-31 09:57:54,747 INFO org.apache.hadoop.ipc.Server: Starting SocketReader
+2012-07-31 09:57:54,756 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcDetailedActivityForPort9001 registered.
+2012-07-31 09:57:54,757 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source RpcActivityForPort9001 registered.
+2012-07-31 09:57:55,154 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2012-07-31 09:57:55,515 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50030
+2012-07-31 09:57:55,519 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50030 webServer.getConnectors()[0].getLocalPort() returned 50030
+2012-07-31 09:57:55,519 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50030
+2012-07-31 09:57:56,924 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source jvm registered.
+2012-07-31 09:57:56,925 INFO org.apache.hadoop.metrics2.impl.MetricsSourceAdapter: MBean for source JobTrackerMetrics registered.
+2012-07-31 09:57:56,925 INFO org.apache.hadoop.mapred.JobTracker: JobTracker up at: 9001
+2012-07-31 09:57:56,925 INFO org.apache.hadoop.mapred.JobTracker: JobTracker webserver: 50030
+2012-07-31 09:57:57,336 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-07-31 09:57:57,356 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost:9000/Users/zhunan/codes/hadoop/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /Users/zhunan/codes/hadoop/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 29 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1994)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1974)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:792)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:563)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1388)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1384)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1382)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1070)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:828)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:234)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2410)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2192)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2186)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:300)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:291)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4978)
+2012-07-31 09:58:07,364 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-07-31 09:58:07,366 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost:9000/Users/zhunan/codes/hadoop/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /Users/zhunan/codes/hadoop/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 19 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1994)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1974)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:792)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:563)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1388)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1384)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1382)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1070)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:828)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:234)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2410)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2192)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2186)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:300)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:291)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4978)
+2012-07-31 09:58:17,371 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-07-31 09:58:17,373 INFO org.apache.hadoop.mapred.JobTracker: problem cleaning system directory: hdfs://localhost:9000/Users/zhunan/codes/hadoop/mapred/system
+org.apache.hadoop.ipc.RemoteException: org.apache.hadoop.hdfs.server.namenode.SafeModeException: Cannot delete /Users/zhunan/codes/hadoop/mapred/system. Name node is in safe mode.
+The ratio of reported blocks 1.0000 has reached the threshold 0.9990. Safe mode will be turned off automatically in 9 seconds.
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.deleteInternal(FSNamesystem.java:1994)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete(FSNamesystem.java:1974)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.delete(NameNode.java:792)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.ipc.RPC$Server.call(RPC.java:563)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1388)
+	at org.apache.hadoop.ipc.Server$Handler$1.run(Server.java:1384)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1121)
+	at org.apache.hadoop.ipc.Server$Handler.run(Server.java:1382)
+
+	at org.apache.hadoop.ipc.Client.call(Client.java:1070)
+	at org.apache.hadoop.ipc.RPC$Invoker.invoke(RPC.java:225)
+	at $Proxy5.delete(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:82)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:59)
+	at $Proxy5.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:828)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:234)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2410)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2192)
+	at org.apache.hadoop.mapred.JobTracker.<init>(JobTracker.java:2186)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:300)
+	at org.apache.hadoop.mapred.JobTracker.startTracker(JobTracker.java:291)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4978)
+2012-07-31 09:58:27,379 INFO org.apache.hadoop.mapred.JobTracker: Cleaning up the system directory
+2012-07-31 09:58:27,467 INFO org.apache.hadoop.mapred.JobTracker: History server being initialized in embedded mode
+2012-07-31 09:58:27,474 INFO org.apache.hadoop.mapred.JobHistoryServer: Started job history server at: localhost:50030
+2012-07-31 09:58:27,474 INFO org.apache.hadoop.mapred.JobTracker: Job History Server web address: localhost:50030
+2012-07-31 09:58:27,483 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Completed job store is inactive
+2012-07-31 09:58:27,728 FATAL org.apache.hadoop.mapred.JobTracker: java.lang.RuntimeException: Failed to start FairScheduler
+	at org.apache.hadoop.mapred.FairScheduler.start(FairScheduler.java:224)
+	at org.apache.hadoop.mapred.JobTracker.offerService(JobTracker.java:2581)
+	at org.apache.hadoop.mapred.JobTracker.main(JobTracker.java:4979)
+Caused by: org.xml.sax.SAXParseException: The end-tag for element type "minReduce" must end with a '>' delimiter.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:246)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:180)
+	at org.apache.hadoop.mapred.PoolManager.reloadAllocs(PoolManager.java:255)
+	at org.apache.hadoop.mapred.PoolManager.initialize(PoolManager.java:137)
+	at org.apache.hadoop.mapred.FairScheduler.start(FairScheduler.java:156)
+	... 2 more
+
+2012-07-31 09:58:27,729 INFO org.apache.hadoop.mapred.JobTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down JobTracker at zhunan-2.local/192.168.1.100
+************************************************************/
