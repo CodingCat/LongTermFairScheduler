@@ -51,10 +51,10 @@ import org.xml.sax.SAXException;
  */
 public class PoolManager {
 	public class CreditUpdater extends Thread {
-		private int updateInterval;
+		private long updateInterval;
 		private PoolManager poolMgr;
 		public CreditUpdater(int Interval, PoolManager poolM){
-			this.updateInterval = Interval;
+			this.updateInterval = Interval * 1000;
 			this.poolMgr = poolM;
 		}
 		
@@ -62,8 +62,8 @@ public class PoolManager {
 		public void run(){
 			while (true){
 				try{
-					poolMgr.updateVCCreditValue(this.updateInterval, TaskType.MAP);
-					poolMgr.updateVCCreditValue(this.updateInterval, TaskType.REDUCE);
+					poolMgr.updatePoolCreditValue(this.updateInterval, TaskType.MAP);
+					poolMgr.updatePoolCreditValue(this.updateInterval, TaskType.REDUCE);
 					Thread.sleep(updateInterval);
 				}
 				catch(Exception e){
@@ -611,7 +611,7 @@ public class PoolManager {
 	  }
   }
   
-  public void updateVCCreditValue(long l, TaskType ttype)
+  public void updatePoolCreditValue(long l, TaskType ttype)
   {
 	  refreshSystemStatus();
 	  

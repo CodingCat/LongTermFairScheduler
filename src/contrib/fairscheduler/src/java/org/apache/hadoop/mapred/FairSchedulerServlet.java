@@ -158,11 +158,11 @@ public class FairSchedulerServlet extends HttpServlet {
       out.print("<table border=\"2\" cellpadding=\"5\" cellspacing=\"2\">\n");
       out.print("<tr><th rowspan=2>Pool</th>" +
           "<th rowspan=2>Running Jobs</th>" + 
-          "<th colspan=4>Map Tasks</th>" + 
-          "<th colspan=4>Reduce Tasks</th>" +
+          "<th colspan=5>Map Tasks</th>" + 
+          "<th colspan=5>Reduce Tasks</th>" +
           "<th rowspan=2>Scheduling Mode</th></tr>\n<tr>" + 
-          "<th>Min Share</th><th>Max Share</th><th>Running</th><th>Fair Share</th>" + 
-          "<th>Min Share</th><th>Max Share</th><th>Running</th><th>Fair Share</th></tr>\n");
+          "<th>Min Share</th><th>Max Share</th><th>Running</th><th>Fair Share</th><th>Credits</th>" + 
+          "<th>Min Share</th><th>Max Share</th><th>Running</th><th>Fair Share</th><th>Credits</th></tr>\n");
       List<Pool> pools = new ArrayList<Pool>(poolManager.getPools());
       Collections.sort(pools, new Comparator<Pool>() {
         public int compare(Pool p1, Pool p2) {
@@ -199,6 +199,7 @@ public class FairSchedulerServlet extends HttpServlet {
         out.print("</td>");
         out.printf("<td>%d</td>", runningMaps);
         out.printf("<td>%.1f</td>", pool.getMapSchedulable().getFairShare());
+        out.printf("<td>%d</td>", pool.getCredit(TaskType.MAP));
         // Reduce Tasks
         out.printf("<td>%d</td>", poolManager.getAllocation(name,
             TaskType.REDUCE));
@@ -214,6 +215,7 @@ public class FairSchedulerServlet extends HttpServlet {
         out.print("</td>");
         out.printf("<td>%d</td>", runningReduces);
         out.printf("<td>%.1f</td>", pool.getReduceSchedulable().getFairShare());
+        out.printf("<td>%d</td>", pool.getCredit(TaskType.REDUCE));
         out.printf("<td>%s</td>", pool.getSchedulingMode());
         out.print("</tr>\n");
       }

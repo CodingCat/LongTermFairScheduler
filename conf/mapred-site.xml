@@ -23,5 +23,9 @@
 		<name>mapred.fairscheduler.preemption</name>
 		<value>true</value>
 	</property>
+	<property>
+		<name>mapred.fairscheduler.creditupdateinterval</name>
+		<value>60</value>
+	</property>
 </configuration>
 
