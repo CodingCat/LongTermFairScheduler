@@ -583,7 +583,7 @@ public class PoolManager {
 		  totalMapDemands += pool.getDemand(TaskType.MAP);
 		  totalReduceDemands += pool.getDemand(TaskType.REDUCE);
 		  totalMapCapacity += getAllocation(pool.getName(), TaskType.MAP);
-		  totalMapCapacity += getAllocation(pool.getName(), TaskType.REDUCE);
+		  totalReduceCapacity += getAllocation(pool.getName(), TaskType.REDUCE);
 	  }
   }
   
@@ -598,10 +598,8 @@ public class PoolManager {
 		  pool.getRunningTasks(TaskType.REDUCE));
 	  
 	  int oldWasted = Math.max(0, totalCapacity - totalDemand);
-	  // 1. remove vc[i] from the population and recycle its allocation
 	  int newDemand = totalDemand - poolDemand;
-	  int newCapacity = totalCapacity - poolDemand;
-	  // 2. decide how to deal with the allocation
+	  int newCapacity = totalCapacity - poolAlloc;
 	  if (newDemand > newCapacity) {
 		  // still someone can use more machines
 		  return Math.max(0, poolAlloc + oldWasted - (newDemand - newCapacity));

@@ -115,10 +115,10 @@ public class Pool {
   
   public void updateCredit(TaskType ttype, long l){
 	  if (ttype == TaskType.MAP){
-		  this.mapCredit = l;
+		  this.mapCredit += l;
 	  }
 	  if (ttype == TaskType.REDUCE){
-		  this.reduceCredit = l;
+		  this.reduceCredit += l;
 	  }
   }
   
