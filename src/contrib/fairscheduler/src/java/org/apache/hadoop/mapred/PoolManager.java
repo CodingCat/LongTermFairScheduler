@@ -50,11 +50,12 @@ import org.xml.sax.SAXException;
  * such as guaranteed share allocations, from the fair scheduler config file.
  */
 public class PoolManager {
+	
 	public class CreditUpdater extends Thread {
-		private long updateInterval;
+		private long updateThreadPeriod;
 		private PoolManager poolMgr;
 		public CreditUpdater(int Interval, PoolManager poolM){
-			this.updateInterval = Interval * 1000;
+			this.updateThreadPeriod = Interval * 1000;
 			this.poolMgr = poolM;
 		}
 		
@@ -62,9 +63,12 @@ public class PoolManager {
 		public void run(){
 			while (true){
 				try{
-					poolMgr.updatePoolCreditValue(this.updateInterval, TaskType.MAP);
-					poolMgr.updatePoolCreditValue(this.updateInterval, TaskType.REDUCE);
-					Thread.sleep(updateInterval);
+					//poolMgr.creditUpdateDuration = System.currentTimeMillis() - poolMgr.lastTicket;
+				    //poolMgr.lastTicket += poolMgr.creditUpdateDuration; 
+				    
+				    poolMgr.updatePoolCreditValue(TaskType.MAP);
+					poolMgr.updatePoolCreditValue(TaskType.REDUCE);
+					Thread.sleep(this.updateThreadPeriod);
 				}
 				catch(Exception e){
 					e.printStackTrace();
@@ -72,7 +76,9 @@ public class PoolManager {
 			}
 		}
 	}
-
+  
+  long lastTicket = 0;
+  long creditUpdateDuration = 0;
 	
   public static final Log LOG = LogFactory.getLog(
     "org.apache.hadoop.mapred.PoolManager");
@@ -156,6 +162,7 @@ public class PoolManager {
     this.poolNameProperty = conf.get(
         "mapred.fairscheduler.poolnameproperty", "user.name");
     this.updateInterval = conf.getInt("mapred.fairscheduler.creditupdateinterval", 60);
+  //  this.lastTicket = System.currentTimeMillis();
     (new CreditUpdater(this.updateInterval, this)).start();
     this.allocFile = conf.get("mapred.fairscheduler.allocation.file");
     if (allocFile == null) {
@@ -456,6 +463,16 @@ public class PoolManager {
     Integer alloc = allocationMap.get(pool);
     return (alloc == null ? 0 : alloc);
   }
+  
+  /**
+   * get capacity of pool
+   * @param pool, the interested pool
+   * @param taskType, Task Type
+   * @return capacity(min) of the pool
+   */
+  public int getCapacity(String pool, TaskType taskType){
+	  return getAllocation(pool,taskType);
+  }
 
   /**
    * Get the maximum map or reduce slots for the given pool.
@@ -594,22 +611,24 @@ public class PoolManager {
 		  this.totalReduceDemands);
 	  int poolDemand = (ttype == TaskType.MAP ? pool.getDemand(TaskType.MAP) :
 			  pool.getDemand(TaskType.REDUCE));
-	  int poolAlloc = (ttype == TaskType.MAP ? pool.getRunningTasks(TaskType.MAP) :
+	  int poolCapacity = (ttype == TaskType.MAP ? getCapacity(pool.getName(), TaskType.MAP):
+		  getCapacity(pool.getName(), TaskType.REDUCE));
+	  int poolAllocation = (ttype == TaskType.MAP? pool.getRunningTasks(TaskType.MAP):
 		  pool.getRunningTasks(TaskType.REDUCE));
 	  
 	  int oldWasted = Math.max(0, totalCapacity - totalDemand);
 	  int newDemand = totalDemand - poolDemand;
-	  int newCapacity = totalCapacity - poolAlloc;
+	  int newCapacity = totalCapacity - poolCapacity;
 	  if (newDemand > newCapacity) {
 		  // still someone can use more machines
-		  return Math.max(0, poolAlloc + oldWasted - (newDemand - newCapacity));
+		  return Math.max(0, poolAllocation + oldWasted - (newDemand - newCapacity));
 	  } else {
 		  // no one requires more
-		  return poolAlloc + oldWasted;
+		  return poolAllocation + oldWasted;
 	  }
   }
   
-  public void updatePoolCreditValue(long l, TaskType ttype)
+  public void updatePoolCreditValue(TaskType ttype)
   {
 	  refreshSystemStatus();
 	  
@@ -622,7 +641,7 @@ public class PoolManager {
 				  pool.getRunningTasks(TaskType.MAP) :
 					  pool.getRunningTasks(TaskType.REDUCE));
 		  int capacity = (ttype == TaskType.MAP ? 
-				  getAllocation(pool.getName(), TaskType.MAP) : getAllocation(pool.getName(), TaskType.REDUCE));
+				  getCapacity(pool.getName(), TaskType.MAP) : getCapacity(pool.getName(), TaskType.REDUCE));
 		  if (allocation > capacity){
 			  gain = Math.max(0,  (allocation - capacity) - wasted);
 			  gain = -gain;
@@ -630,7 +649,7 @@ public class PoolManager {
 		  else{
 			  gain = Math.max(0, (capacity - allocation) - wasted);
 		  }
-		  pool.updateCredit(ttype, gain * (l /60));
+		  pool.updateCredit(ttype, gain * this.updateInterval); // why /60?
 	  }
 	  
   }

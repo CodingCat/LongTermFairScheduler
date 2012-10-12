@@ -515,7 +515,7 @@ public class FairScheduler extends TaskScheduler {
         infos.get(job).skippedAtLastHeartbeat = true;
       }
     }
-    
+
     // If no tasks were found, return null
     return tasks.isEmpty() ? null : tasks;
   }
