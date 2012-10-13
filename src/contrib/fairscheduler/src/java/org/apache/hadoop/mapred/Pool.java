@@ -47,10 +47,22 @@ public class Pool {
   private float mapCredit = 0;
   private float reduceCredit = 0;
   
+  //variables to capture the credit update moment
+  private long lastTicket = 0;
+  private long currentUpdateMoment = 0;
+  
+  //metrics which have to be updated manually
+  int nRunningMap;
+  int nRunningReduce;
+  int nDemandingMap;
+  int nDemandingReduce;
+  
+  
   public Pool(FairScheduler scheduler, String name) {
     this.name = name;
     mapSchedulable = new PoolSchedulable(scheduler, this, TaskType.MAP);
     reduceSchedulable = new PoolSchedulable(scheduler, this, TaskType.REDUCE);
+    lastTicket = System.currentTimeMillis();
   }
   
   public Collection<JobInProgress> getJobs() {
@@ -124,5 +136,19 @@ public class Pool {
   
   public float getCredit(TaskType ttype){
 	  return ((ttype == TaskType.MAP ? this.mapCredit : this.reduceCredit));
+  }
+  
+  public long getUpdateDuration(){
+	  long currentTimeStamp = System.currentTimeMillis();
+	  long ret = currentUpdateMoment - lastTicket;
+	  lastTicket = currentTimeStamp;
+	  return ret;
+  }
+  
+  public void syncMetrics(){
+	  nRunningMap = getRunningTasks(TaskType.MAP);
+	  nRunningReduce = getRunningTasks(TaskType.REDUCE);
+	  nDemandingMap = this.mapSchedulable.getDemandWithoutRoof();
+	  nDemandingReduce = this.reduceSchedulable.getDemandWithoutRoof();
   }
 }

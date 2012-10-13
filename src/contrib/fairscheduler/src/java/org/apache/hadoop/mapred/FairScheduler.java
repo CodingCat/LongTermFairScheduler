@@ -18,11 +18,14 @@
 
 package org.apache.hadoop.mapred;
 
+import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -98,6 +101,10 @@ public class FairScheduler extends TaskScheduler {
   protected long lastHeartbeatTime;  // Time we last ran assignTasks 
   private long lastPreemptCheckTime; // Time we last ran preemptTasksIfNecessary
   
+  //generate credit report
+  private FileWriter creditsReporter = null;
+  
+  
   /**
    * A class for holding per-job scheduler variables. These always contain the
    * values of the variables at the last update(), and are used along with a
@@ -123,6 +130,29 @@ public class FairScheduler extends TaskScheduler {
   
   public FairScheduler() {
     this(new Clock(), false);
+    try{
+    	this.creditsReporter = new FileWriter("creditsRecord_" + System.currentTimeMillis(), true);
+    }
+    catch (Exception e){
+    	e.printStackTrace();
+    }
+  }
+  
+  private void appendRecords(String records){
+		try {
+			String date = (new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(new Date());
+			creditsReporter.write("[" + date + "]:" + records + "\n");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+  }
+	
+  private String collectPoolStatus(String poolName){
+	  Pool pool = poolMgr.pools.get(poolName);
+	  return (pool.getName() + "\t" + "MAP:" + pool.getCredit(TaskType.MAP) + 
+						"\tREDUCE:" + pool.getCredit(TaskType.REDUCE) +
+						"\tMapFairShare:" + pool.getMapSchedulable().getFairShare() + 
+						"\tReduceFairShare:" + pool.getReduceSchedulable().getFairShare());
   }
   
   /**
@@ -515,7 +545,41 @@ public class FairScheduler extends TaskScheduler {
         infos.get(job).skippedAtLastHeartbeat = true;
       }
     }
-
+    
+    //when there is tasks to be assigned, we have to update the contribution and 
+    //harm brought by each pool
+	if (tasks.isEmpty() == false) {
+		try{
+			// sync counters;
+			for (Pool pool : poolMgr.pools.values()) {
+				pool.syncMetrics();
+			}
+			// update counters;
+			for (Task t : tasks) {
+				JobInProgress job = taskTrackerManager.getJob(t.getJobID());
+				Pool pool = poolMgr.getPool(job.getJobConf().getQueueName());
+				if (pool == null) {
+					throw new Exception("invalid queue");
+				}
+				if (t.isMapTask()) {
+					pool.nRunningMap++;
+				} else {
+					pool.nRunningReduce++;
+				}
+			}
+			poolMgr.updatePoolCreditValue(TaskType.MAP);
+			poolMgr.updatePoolCreditValue(TaskType.REDUCE);
+			//flush to the file
+			for (Pool pool : poolMgr.pools.values()){
+				appendRecords(collectPoolStatus(pool.getName()));
+			}
+			creditsReporter.flush();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+    
     // If no tasks were found, return null
     return tasks.isEmpty() ? null : tasks;
   }

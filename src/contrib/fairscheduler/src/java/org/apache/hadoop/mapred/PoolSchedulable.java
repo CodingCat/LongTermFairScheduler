@@ -42,6 +42,10 @@ public class PoolSchedulable extends Schedulable {
   private List<JobSchedulable> jobScheds = new LinkedList<JobSchedulable>();
   private int demand = 0;
   
+  //Nan
+  private int mapDemandwithoutRoof = 0;
+  private int reduceDemandwithoutRoof = 0;
+  
   // Variables used for preemption
   long lastTimeAtMinShare;
   long lastTimeAtHalfFairShare;
@@ -84,11 +88,22 @@ public class PoolSchedulable extends Schedulable {
       sched.updateDemand();
       demand += sched.getDemand();
     }
+    if (taskType == TaskType.MAP){
+    	this.mapDemandwithoutRoof = demand;
+    }
+    else{
+    	this.reduceDemandwithoutRoof = demand;
+    }
+    
     // if demand exceeds the cap for this pool, limit to the max
     int maxTasks = poolMgr.getMaxSlots(pool.getName(), taskType);
     if(demand > maxTasks) {
       demand = maxTasks;
     }
+  }
+  
+  public int getDemandWithoutRoof(){
+	  return taskType == TaskType.MAP ? this.mapDemandwithoutRoof : this.reduceDemandwithoutRoof;
   }
   
   /**

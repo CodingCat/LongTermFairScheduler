@@ -164,7 +164,7 @@ public class PoolManager {
   private String poolNameProperty; // Jobconf property to use for determining a
                                    // job's pool name (default: user.name)
   
-  private Map<String, Pool> pools = new HashMap<String, Pool>();
+  Map<String, Pool> pools = new HashMap<String, Pool>();
   
   private long lastReloadAttempt; // Last time we tried to reload the pools file
   private long lastSuccessfulReload; // Last time we successfully reloaded pools
@@ -176,7 +176,7 @@ public class PoolManager {
   private int totalReduceDemands = 0;
   private int totalMapCapacity = 0;
   private int totalReduceCapacity = 0;
-  private float updateInterval = 0;
+ // private float updateInterval = 0;
   
   public PoolManager(FairScheduler scheduler) {
     this.scheduler = scheduler;
@@ -187,8 +187,8 @@ public class PoolManager {
     Configuration conf = scheduler.getConf();
     this.poolNameProperty = conf.get(
         "mapred.fairscheduler.poolnameproperty", "user.name");
-    this.updateInterval = (float)scheduler.updateInterval/1000;//conf.getInt("mapred.fairscheduler.creditupdateinterval", 60);
-    (new CreditUpdater(this)).start();
+   // this.updateInterval = (float)scheduler.updateInterval/1000;//conf.getInt("mapred.fairscheduler.creditupdateinterval", 60);
+  //  (new CreditUpdater(this)).start();
     this.allocFile = conf.get("mapred.fairscheduler.allocation.file");
     if (allocFile == null) {
       // No allocation file specified in jobconf. Use the default allocation
@@ -622,8 +622,8 @@ public class PoolManager {
   
   public void refreshSystemStatus(){
 	  for (Pool pool : pools.values()){
-		  totalMapDemands += pool.getDemand(TaskType.MAP);
-		  totalReduceDemands += pool.getDemand(TaskType.REDUCE);
+		  totalMapDemands += pool.nDemandingMap;
+		  totalReduceDemands += pool.nDemandingReduce;
 		  totalMapCapacity += getAllocation(pool.getName(), TaskType.MAP);
 		  totalReduceCapacity += getAllocation(pool.getName(), TaskType.REDUCE);
 	  }
@@ -634,12 +634,10 @@ public class PoolManager {
 		  this.totalReduceCapacity);
 	  int totalDemand = (ttype == TaskType.MAP ? this.totalMapDemands : 
 		  this.totalReduceDemands);
-	  int poolDemand = (ttype == TaskType.MAP ? pool.getDemand(TaskType.MAP) :
-			  pool.getDemand(TaskType.REDUCE));
+	  int poolDemand = (ttype == TaskType.MAP ? pool.nDemandingMap : pool.nDemandingReduce);
 	  int poolCapacity = (ttype == TaskType.MAP ? getCapacity(pool.getName(), TaskType.MAP):
 		  getCapacity(pool.getName(), TaskType.REDUCE));
-	  int poolAllocation = (ttype == TaskType.MAP? pool.getRunningTasks(TaskType.MAP):
-		  pool.getRunningTasks(TaskType.REDUCE));
+	  int poolAllocation = (ttype == TaskType.MAP? pool.nRunningMap: pool.nRunningReduce);
 	  
 	  int oldWasted = Math.max(0, totalCapacity - totalDemand);
 	  int newDemand = totalDemand - poolDemand;
@@ -662,9 +660,7 @@ public class PoolManager {
 		  int wasted = (ttype == TaskType.MAP ? 
 				  this.computeWastedSlotsExcludingOnePool(TaskType.MAP, pool) :
 					  this.computeWastedSlotsExcludingOnePool(TaskType.REDUCE, pool));
-		  int allocation = (ttype == TaskType.MAP ? 
-				  pool.getRunningTasks(TaskType.MAP) :
-					  pool.getRunningTasks(TaskType.REDUCE));
+		  int allocation = (ttype == TaskType.MAP ? pool.nRunningMap : pool.nRunningReduce);
 		  int capacity = (ttype == TaskType.MAP ? 
 				  getCapacity(pool.getName(), TaskType.MAP) : getCapacity(pool.getName(), TaskType.REDUCE));
 		  if (allocation > capacity){
@@ -674,7 +670,7 @@ public class PoolManager {
 		  else{
 			  gain = Math.max(0, (capacity - allocation) - wasted);
 		  }
-		  pool.updateCredit(ttype, gain * this.updateInterval); // why /60?
+		  pool.updateCredit(ttype, gain * pool.getUpdateDuration()); // why /60?
 	  }
 	  
   }
