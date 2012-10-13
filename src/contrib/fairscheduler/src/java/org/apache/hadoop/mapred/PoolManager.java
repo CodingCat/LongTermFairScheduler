@@ -19,12 +19,15 @@
 package org.apache.hadoop.mapred;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,7 +40,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.mapreduce.TaskType;
-import org.apache.hadoop.metrics.MetricsContext;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -54,9 +56,30 @@ public class PoolManager {
 	public class CreditUpdater extends Thread {
 		private long updateThreadPeriod;
 		private PoolManager poolMgr;
+		private FileWriter creditsReporter = null;
 		public CreditUpdater(int Interval, PoolManager poolM){
 			this.updateThreadPeriod = Interval * 1000;
 			this.poolMgr = poolM;
+			try {
+				this.creditsReporter = new FileWriter("creditsRecort_" + System.currentTimeMillis(), true);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		private void appendRecords(String records){
+			try {
+				String date = (new SimpleDateFormat("yyyy-MM-dd hh:mm:ss")).format(new Date());
+				creditsReporter.write("[" + date + "]:" + records + "\n");
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		private String collectPoolStatus(String poolName){
+			Pool pool = pools.get(poolName);
+			return (pool.getName() + "\t" + "MAP:" + pool.getCredit(TaskType.MAP) + 
+							"\tREDUCE:" + pool.getCredit(TaskType.REDUCE));
 		}
 		
 		@Override
@@ -65,9 +88,12 @@ public class PoolManager {
 				try{
 					//poolMgr.creditUpdateDuration = System.currentTimeMillis() - poolMgr.lastTicket;
 				    //poolMgr.lastTicket += poolMgr.creditUpdateDuration; 
-				    
 				    poolMgr.updatePoolCreditValue(TaskType.MAP);
 					poolMgr.updatePoolCreditValue(TaskType.REDUCE);
+					for (Pool pool:pools.values()){
+						appendRecords(collectPoolStatus(pool.getName()));
+					}
+					creditsReporter.flush();
 					Thread.sleep(this.updateThreadPeriod);
 				}
 				catch(Exception e){
