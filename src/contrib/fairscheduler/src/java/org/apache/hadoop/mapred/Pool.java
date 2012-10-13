@@ -44,8 +44,8 @@ public class Pool {
   private PoolSchedulable mapSchedulable;
   private PoolSchedulable reduceSchedulable;
   
-  private long mapCredit = 0;
-  private long reduceCredit = 0;
+  private float mapCredit = 0;
+  private float reduceCredit = 0;
   
   public Pool(FairScheduler scheduler, String name) {
     this.name = name;
@@ -113,7 +113,7 @@ public class Pool {
 	return taskSchedulable.getDemand();
   }
   
-  public void updateCredit(TaskType ttype, long l){
+  public void updateCredit(TaskType ttype, float l){
 	  if (ttype == TaskType.MAP){
 		  this.mapCredit += l;
 	  }
@@ -122,7 +122,7 @@ public class Pool {
 	  }
   }
   
-  public long getCredit(TaskType ttype){
+  public float getCredit(TaskType ttype){
 	  return ((ttype == TaskType.MAP ? this.mapCredit : this.reduceCredit));
   }
 }

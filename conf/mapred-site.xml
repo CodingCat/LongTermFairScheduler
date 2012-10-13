@@ -24,6 +24,10 @@
 		<value>true</value>
 	</property>
 	<property>
+		<name>mapred.fairscheduler.update.interval</name>
+		<value>60000</value>
+	</property>
+	<property>
 		<name>mapred.fairscheduler.creditupdateinterval</name>
 		<value>60</value>
 	</property>

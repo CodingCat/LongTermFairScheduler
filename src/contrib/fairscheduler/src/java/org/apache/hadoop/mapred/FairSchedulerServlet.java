@@ -199,7 +199,7 @@ public class FairSchedulerServlet extends HttpServlet {
         out.print("</td>");
         out.printf("<td>%d</td>", runningMaps);
         out.printf("<td>%.1f</td>", pool.getMapSchedulable().getFairShare());
-        out.printf("<td>%d</td>", pool.getCredit(TaskType.MAP));
+        out.printf("<td>%.1f</td>", pool.getCredit(TaskType.MAP));
         // Reduce Tasks
         out.printf("<td>%d</td>", poolManager.getAllocation(name,
             TaskType.REDUCE));
@@ -215,7 +215,7 @@ public class FairSchedulerServlet extends HttpServlet {
         out.print("</td>");
         out.printf("<td>%d</td>", runningReduces);
         out.printf("<td>%.1f</td>", pool.getReduceSchedulable().getFairShare());
-        out.printf("<td>%d</td>", pool.getCredit(TaskType.REDUCE));
+        out.printf("<td>%.1f</td>", pool.getCredit(TaskType.REDUCE));
         out.printf("<td>%s</td>", pool.getSchedulingMode());
         out.print("</tr>\n");
       }

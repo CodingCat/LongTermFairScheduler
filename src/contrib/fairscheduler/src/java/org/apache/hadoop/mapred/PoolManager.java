@@ -57,11 +57,13 @@ public class PoolManager {
 		private long updateThreadPeriod;
 		private PoolManager poolMgr;
 		private FileWriter creditsReporter = null;
-		public CreditUpdater(int Interval, PoolManager poolM){
-			this.updateThreadPeriod = Interval * 1000;
+		public CreditUpdater(PoolManager poolM){
+			Configuration conf = scheduler.getConf();//Interval * 1000;
+			this.updateThreadPeriod = conf.getLong("mapred.fairscheduler.update.interval", 500);
 			this.poolMgr = poolM;
 			try {
-				this.creditsReporter = new FileWriter("creditsRecort_" + System.currentTimeMillis(), true);
+				this.creditsReporter = new FileWriter("creditsRecord_" + System.currentTimeMillis(), true);
+				creditsReporter.write(String.valueOf(this.updateThreadPeriod));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -79,16 +81,16 @@ public class PoolManager {
 		private String collectPoolStatus(String poolName){
 			Pool pool = pools.get(poolName);
 			return (pool.getName() + "\t" + "MAP:" + pool.getCredit(TaskType.MAP) + 
-							"\tREDUCE:" + pool.getCredit(TaskType.REDUCE));
+							"\tREDUCE:" + pool.getCredit(TaskType.REDUCE) +
+							"\tMapFairShare:" + pool.getMapSchedulable().getFairShare() + 
+							"\tReduceFairShare:" + pool.getReduceSchedulable().getFairShare());
 		}
 		
 		@Override
 		public void run(){
 			while (true){
 				try{
-					//poolMgr.creditUpdateDuration = System.currentTimeMillis() - poolMgr.lastTicket;
-				    //poolMgr.lastTicket += poolMgr.creditUpdateDuration; 
-				    poolMgr.updatePoolCreditValue(TaskType.MAP);
+					poolMgr.updatePoolCreditValue(TaskType.MAP);
 					poolMgr.updatePoolCreditValue(TaskType.REDUCE);
 					for (Pool pool:pools.values()){
 						appendRecords(collectPoolStatus(pool.getName()));
@@ -103,9 +105,7 @@ public class PoolManager {
 		}
 	}
   
-  long lastTicket = 0;
-  long creditUpdateDuration = 0;
-	
+  
   public static final Log LOG = LogFactory.getLog(
     "org.apache.hadoop.mapred.PoolManager");
 
@@ -176,7 +176,7 @@ public class PoolManager {
   private int totalReduceDemands = 0;
   private int totalMapCapacity = 0;
   private int totalReduceCapacity = 0;
-  private int updateInterval = 0;
+  private float updateInterval = 0;
   
   public PoolManager(FairScheduler scheduler) {
     this.scheduler = scheduler;
@@ -187,9 +187,8 @@ public class PoolManager {
     Configuration conf = scheduler.getConf();
     this.poolNameProperty = conf.get(
         "mapred.fairscheduler.poolnameproperty", "user.name");
-    this.updateInterval = conf.getInt("mapred.fairscheduler.creditupdateinterval", 60);
-  //  this.lastTicket = System.currentTimeMillis();
-    (new CreditUpdater(this.updateInterval, this)).start();
+    this.updateInterval = (float)scheduler.updateInterval/1000;//conf.getInt("mapred.fairscheduler.creditupdateinterval", 60);
+    (new CreditUpdater(this)).start();
     this.allocFile = conf.get("mapred.fairscheduler.allocation.file");
     if (allocFile == null) {
       // No allocation file specified in jobconf. Use the default allocation
