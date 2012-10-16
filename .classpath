@@ -312,5 +312,6 @@
 	<classpathentry kind="lib" path="src/contrib/thriftfs/lib/hadoopthriftapi.jar"/>
 	<classpathentry kind="lib" path="src/contrib/thriftfs/lib/libthrift.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/zhunan/Downloads/kfs-0.3.jar"/>
 	<classpathentry kind="output" path="src/bin"/>
 </classpath>
