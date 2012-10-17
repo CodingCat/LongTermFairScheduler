@@ -893,29 +893,27 @@ public class JobClient extends Configured implements MRConstants, Tool  {
 
           // Create the splits for the job
           FileSystem fs = submitJobDir.getFileSystem(jobCopy);
-          LOG.info("Creating splits at " + fs.makeQualified(submitJobDir));
+          LOG.debug("Creating splits at " + fs.makeQualified(submitJobDir));
           int maps = writeSplits(context, submitJobDir);
           jobCopy.setNumMapTasks(maps);
+
           // write "queue admins of the queue to which job is being submitted"
           // to job file.
           String queue = jobCopy.getQueueName();
           AccessControlList acl = jobSubmitClient.getQueueAdmins(queue);
           jobCopy.set(QueueManager.toFullPropertyName(queue,
               QueueACL.ADMINISTER_JOBS.getAclName()), acl.getACLString());
-          
+
           // Write job file to JobTracker's fs        
           FSDataOutputStream out = 
             FileSystem.create(fs, submitJobFile,
                 new FsPermission(JobSubmissionFiles.JOB_FILE_PERMISSION));
-          LOG.info(submitJobDir);
-          
+
           try {
             jobCopy.writeXml(out);
           } finally {
             out.close();
           }
-          LOG.info(submitJobDir);
-          
           //
           // Now, actually submit the job (using the submit name)
           //
@@ -923,12 +921,6 @@ public class JobClient extends Configured implements MRConstants, Tool  {
           status = jobSubmitClient.submitJob(
               jobId, submitJobDir.toString(), jobCopy.getCredentials());
           JobProfile prof = jobSubmitClient.getJobProfile(jobId);
-          LOG.info(submitJobDir);
-          if (status != null){
-        	 LOG.info(status.toString());
-        	 LOG.info(prof);
-          }
-          
           if (status != null && prof != null) {
             return new NetworkedJob(status, prof, jobSubmitClient);
           } else {

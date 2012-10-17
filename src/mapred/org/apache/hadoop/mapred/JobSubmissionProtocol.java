@@ -38,7 +38,7 @@ import org.apache.hadoop.security.token.TokenInfo;
 @KerberosInfo(
     serverPrincipal = JobTracker.JT_USER_NAME)
 @TokenInfo(DelegationTokenSelector.class)
-public interface JobSubmissionProtocol extends VersionedProtocol {
+interface JobSubmissionProtocol extends VersionedProtocol {
   /* 
    *Changing the versionID to 2L since the getTaskCompletionEvents method has
    *changed.
