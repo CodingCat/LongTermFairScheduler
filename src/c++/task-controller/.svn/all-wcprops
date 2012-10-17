@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/task-controller
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/task-controller/configure.ac
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/task-controller/.gitignore
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/task-controller/Makefile.am
+END
+.autom4te.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/task-controller/.autom4te.cfg
+END

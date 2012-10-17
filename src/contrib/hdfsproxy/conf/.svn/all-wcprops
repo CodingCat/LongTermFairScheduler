@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf
+END
+hdfsproxy-env.sh.template
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/hdfsproxy-env.sh.template
+END
+tomcat-web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/tomcat-web.xml
+END
+tomcat-forward-web.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/tomcat-forward-web.xml
+END
+hdfsproxy-hosts
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/hdfsproxy-hosts
+END
+ssl-server.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/ssl-server.xml
+END
+hdfsproxy-env.sh
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/hdfsproxy-env.sh
+END
+user-permissions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/user-permissions.xml
+END
+hdfsproxy-default.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/hdfsproxy-default.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/log4j.properties
+END
+user-certs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/user-certs.xml
+END
+configuration.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/hdfsproxy/conf/configuration.xsl
+END

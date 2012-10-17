@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/postexdiagnosis/tests
+END
+MapSideDiskSpill.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/postexdiagnosis/tests/MapSideDiskSpill.java
+END
+ReducesReExecutionImpact.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/postexdiagnosis/tests/ReducesReExecutionImpact.java
+END
+postex_diagnosis_tests.xml
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/postexdiagnosis/tests/postex_diagnosis_tests.xml
+END
+ReadingHDFSFilesAsSideEffect.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/postexdiagnosis/tests/ReadingHDFSFilesAsSideEffect.java
+END
+BalancedReducePartitioning.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/postexdiagnosis/tests/BalancedReducePartitioning.java
+END
+MapsReExecutionImpact.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/postexdiagnosis/tests/MapsReExecutionImpact.java
+END

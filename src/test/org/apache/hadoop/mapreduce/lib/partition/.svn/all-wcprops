@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/mapreduce/lib/partition
+END
+TestTotalOrderPartitioner.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/mapreduce/lib/partition/TestTotalOrderPartitioner.java
+END
+TestInputSampler.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/mapreduce/lib/partition/TestInputSampler.java
+END
+TestBinaryPartitioner.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/mapreduce/lib/partition/TestBinaryPartitioner.java
+END
+TestMRKeyFieldBasedPartitioner.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/mapreduce/lib/partition/TestMRKeyFieldBasedPartitioner.java
+END
+TestKeyFieldHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/mapreduce/lib/partition/TestKeyFieldHelper.java
+END

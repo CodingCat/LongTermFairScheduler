@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/native/src/org/apache/hadoop/io/compress/snappy
+END
+SnappyDecompressor.c
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/native/src/org/apache/hadoop/io/compress/snappy/SnappyDecompressor.c
+END
+org_apache_hadoop_io_compress_snappy.h
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/native/src/org/apache/hadoop/io/compress/snappy/org_apache_hadoop_io_compress_snappy.h
+END
+SnappyCompressor.c
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/native/src/org/apache/hadoop/io/compress/snappy/SnappyCompressor.c
+END

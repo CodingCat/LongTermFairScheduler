@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming
+END
+AutoInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/AutoInputFormat.java
+END
+PipeMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/PipeMapper.java
+END
+Environment.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/Environment.java
+END
+StreamKeyValUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/StreamKeyValUtil.java
+END
+PipeReducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/PipeReducer.java
+END
+StreamBaseRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/StreamBaseRecordReader.java
+END
+PipeCombiner.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/PipeCombiner.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/package.html
+END
+DumpTypedBytes.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/DumpTypedBytes.java
+END
+JarBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/JarBuilder.java
+END
+StreamInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/StreamInputFormat.java
+END
+PathFinder.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/PathFinder.java
+END
+HadoopStreaming.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/HadoopStreaming.java
+END
+PipeMapRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/PipeMapRunner.java
+END
+StreamJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/StreamJob.java
+END
+PipeMapRed.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/PipeMapRed.java
+END
+StreamUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/StreamUtil.java
+END
+UTF8ByteArrayUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/UTF8ByteArrayUtils.java
+END
+LoadTypedBytes.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/LoadTypedBytes.java
+END
+StreamXmlRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/streaming/StreamXmlRecordReader.java
+END

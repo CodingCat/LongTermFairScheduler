@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/terasort
+END
+job_history_summary.py
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/terasort/job_history_summary.py
+END
+TeraSort.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/terasort/TeraSort.java
+END
+TeraInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/terasort/TeraInputFormat.java
+END
+TeraGen.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/terasort/TeraGen.java
+END
+TeraOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/terasort/TeraOutputFormat.java
+END
+TeraValidate.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/terasort/TeraValidate.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/terasort/package.html
+END

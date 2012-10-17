@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db
+END
+MySQLDataDrivenDBRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/MySQLDataDrivenDBRecordReader.java
+END
+OracleDataDrivenDBRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/OracleDataDrivenDBRecordReader.java
+END
+DateSplitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/DateSplitter.java
+END
+BooleanSplitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/BooleanSplitter.java
+END
+OracleDataDrivenDBInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/OracleDataDrivenDBInputFormat.java
+END
+DBRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/DBRecordReader.java
+END
+BigDecimalSplitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/BigDecimalSplitter.java
+END
+DataDrivenDBRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/DataDrivenDBRecordReader.java
+END
+TextSplitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/TextSplitter.java
+END
+DBSplitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/DBSplitter.java
+END
+DBConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/DBConfiguration.java
+END
+DBInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/DBInputFormat.java
+END
+DBWritable.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/DBWritable.java
+END
+DBOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/DBOutputFormat.java
+END
+DataDrivenDBInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/DataDrivenDBInputFormat.java
+END
+IntegerSplitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/IntegerSplitter.java
+END
+OracleDateSplitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/OracleDateSplitter.java
+END
+FloatSplitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/FloatSplitter.java
+END
+OracleDBRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/OracleDBRecordReader.java
+END
+MySQLDBRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/db/MySQLDBRecordReader.java
+END

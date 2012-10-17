@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/typedbytes
+END
+Type.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/typedbytes/Type.java
+END
+TypedBytesWritable.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/typedbytes/TypedBytesWritable.java
+END
+TypedBytesWritableInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/typedbytes/TypedBytesWritableInput.java
+END
+TypedBytesWritableOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/typedbytes/TypedBytesWritableOutput.java
+END
+TypedBytesRecordInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/typedbytes/TypedBytesRecordInput.java
+END
+TypedBytesInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/typedbytes/TypedBytesInput.java
+END
+TypedBytesRecordOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/typedbytes/TypedBytesRecordOutput.java
+END
+TypedBytesOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/typedbytes/TypedBytesOutput.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/streaming/src/java/org/apache/hadoop/typedbytes/package.html
+END

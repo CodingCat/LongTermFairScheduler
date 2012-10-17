@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/web
+END
+ParamFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/web/ParamFilter.java
+END
+AuthFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/web/AuthFilter.java
+END
+JsonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/web/JsonUtil.java
+END
+WebHdfsFileSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/web/WebHdfsFileSystem.java
+END
+KerberosUgiAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/web/KerberosUgiAuthenticator.java
+END

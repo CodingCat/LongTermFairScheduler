@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs
+END
+hdfs_quota_admin_guide.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/hdfs_quota_admin_guide.xml
+END
+native_libraries.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/native_libraries.xml
+END
+webhdfs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/webhdfs.xml
+END
+distcp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/distcp.xml
+END
+streaming.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/streaming.xml
+END
+tabs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/tabs.xml
+END
+capacity_scheduler.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/capacity_scheduler.xml
+END
+mapred_tutorial.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/mapred_tutorial.xml
+END
+hdfs_permissions_guide.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/hdfs_permissions_guide.xml
+END
+Secure_Impersonation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/Secure_Impersonation.xml
+END
+hadoop_archives.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/hadoop_archives.xml
+END
+commands_manual.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/commands_manual.xml
+END
+hdfs_user_guide.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/hdfs_user_guide.xml
+END
+SLG_user_guide.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/SLG_user_guide.xml
+END
+cluster_setup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/cluster_setup.xml
+END
+gridmix.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/gridmix.xml
+END
+site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/site.xml
+END
+single_node_setup.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/single_node_setup.xml
+END
+index.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/index.xml
+END
+hod_scheduler.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/hod_scheduler.xml
+END
+service_level_auth.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/service_level_auth.xml
+END
+file_system_shell.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/file_system_shell.xml
+END
+libhdfs.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/libhdfs.xml
+END
+hdfs_design.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/hdfs_design.xml
+END
+deployment_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/deployment_layout.xml
+END
+vaidya.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/vaidya.xml
+END
+fair_scheduler.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/fair_scheduler.xml
+END
+HttpAuthentication.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/src/documentation/content/xdocs/HttpAuthentication.xml
+END

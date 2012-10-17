@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples
+END
+SecondarySort.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/SecondarySort.java
+END
+MultiFileWordCount.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/MultiFileWordCount.java
+END
+Join.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/Join.java
+END
+PiEstimator.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/PiEstimator.java
+END
+AggregateWordHistogram.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/AggregateWordHistogram.java
+END
+SleepJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/SleepJob.java
+END
+ExampleDriver.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/ExampleDriver.java
+END
+RandomWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/RandomWriter.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/package.html
+END
+RandomTextWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/RandomTextWriter.java
+END
+WordCount.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/WordCount.java
+END
+DBCountPageView.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/DBCountPageView.java
+END
+Sort.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/Sort.java
+END
+AggregateWordCount.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/AggregateWordCount.java
+END
+Grep.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/examples/org/apache/hadoop/examples/Grep.java
+END

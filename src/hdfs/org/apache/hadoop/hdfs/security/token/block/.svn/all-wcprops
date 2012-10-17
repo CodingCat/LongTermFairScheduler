@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/security/token/block
+END
+ExportedBlockKeys.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/security/token/block/ExportedBlockKeys.java
+END
+InvalidBlockTokenException.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/security/token/block/InvalidBlockTokenException.java
+END
+BlockKey.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/security/token/block/BlockKey.java
+END
+BlockTokenSecretManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/security/token/block/BlockTokenSecretManager.java
+END
+BlockTokenSelector.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/security/token/block/BlockTokenSelector.java
+END
+BlockTokenIdentifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/security/token/block/BlockTokenIdentifier.java
+END

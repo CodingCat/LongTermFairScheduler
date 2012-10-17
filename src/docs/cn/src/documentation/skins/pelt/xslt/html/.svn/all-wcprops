@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/pelt/xslt/html
+END
+book-to-menu.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/pelt/xslt/html/book-to-menu.xsl
+END
+site-to-xhtml.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/pelt/xslt/html/site-to-xhtml.xsl
+END
+document-to-html.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/pelt/xslt/html/document-to-html.xsl
+END
+tab-to-menu.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/pelt/xslt/html/tab-to-menu.xsl
+END

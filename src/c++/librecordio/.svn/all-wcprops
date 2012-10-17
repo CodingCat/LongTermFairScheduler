@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio
+END
+filestream.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/filestream.cc
+END
+archive.hh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/archive.hh
+END
+typeIDs.hh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/typeIDs.hh
+END
+recordTypeInfo.cc
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/recordTypeInfo.cc
+END
+csvarchive.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/csvarchive.cc
+END
+typeInfo.cc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/typeInfo.cc
+END
+exception.cc
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/exception.cc
+END
+utils.cc
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/utils.cc
+END
+fieldTypeInfo.cc
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/fieldTypeInfo.cc
+END
+xmlarchive.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/xmlarchive.cc
+END
+filestream.hh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/filestream.hh
+END
+recordio.cc
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/recordio.cc
+END
+recordTypeInfo.hh
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/recordTypeInfo.hh
+END
+csvarchive.hh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/csvarchive.hh
+END
+typeInfo.hh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/typeInfo.hh
+END
+exception.hh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/exception.hh
+END
+binarchive.cc
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/binarchive.cc
+END
+utils.hh
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/utils.hh
+END
+fieldTypeInfo.hh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/fieldTypeInfo.hh
+END
+xmlarchive.hh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/xmlarchive.hh
+END
+recordio.hh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/recordio.hh
+END
+typeIDs.cc
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/typeIDs.cc
+END
+binarchive.hh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/binarchive.hh
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/librecordio/Makefile
+END

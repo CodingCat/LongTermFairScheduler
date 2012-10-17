@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/aop/org/apache/hadoop/mapred
+END
+JobInProgressAspect.aj
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/aop/org/apache/hadoop/mapred/JobInProgressAspect.aj
+END
+JobTrackerAspect.aj
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/aop/org/apache/hadoop/mapred/JobTrackerAspect.aj
+END
+JobClientAspect.aj
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/aop/org/apache/hadoop/mapred/JobClientAspect.aj
+END
+TaskTrackerAspect.aj
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/aop/org/apache/hadoop/mapred/TaskTrackerAspect.aj
+END
+JTProtocolAspect.aj
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/aop/org/apache/hadoop/mapred/JTProtocolAspect.aj
+END
+MapReducePolicyProviderAspect.aj
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/aop/org/apache/hadoop/mapred/MapReducePolicyProviderAspect.aj
+END
+StatisticsCollectorAspect.aj
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/aop/org/apache/hadoop/mapred/StatisticsCollectorAspect.aj
+END
+TaskAspect.aj
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/aop/org/apache/hadoop/mapred/TaskAspect.aj
+END

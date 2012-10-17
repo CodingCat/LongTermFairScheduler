@@ -1,0 +1,138 @@
+10
+
+dir
+1399070
+http://svn.apache.org/repos/asf/hadoop/common/tags/release-1.0.3/src
+http://svn.apache.org/repos/asf
+
+
+
+2012-05-09T01:31:53.166208Z
+1335883
+mattf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+test
+dir
+
+ant
+dir
+
+hdfs
+dir
+
+fixFontsPath.sh
+file
+
+
+
+
+2012-10-17T01:42:38.000000Z
+008e1b2549a6e4249bf9bdb60a54e8e5
+2008-12-11T00:04:27.852658Z
+725496
+omalley
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3401
+
+native
+dir
+
+docs
+dir
+
+core
+dir
+
+tools
+dir
+
+contrib
+dir
+
+webapps
+dir
+
+mapred
+dir
+
+c++
+dir
+
+benchmarks
+dir
+
+saveVersion.sh
+file
+
+
+
+
+2012-10-17T01:42:38.000000Z
+03a9c265b30f023e087a245f5a807a5f
+2012-01-31T01:44:49.819446Z
+1238127
+mattf
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1900
+
+packages
+dir
+
+examples
+dir
+

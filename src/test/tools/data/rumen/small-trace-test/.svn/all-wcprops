@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test
+END
+dispatch-trace-output.json.gz
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/dispatch-trace-output.json.gz
+END
+v20-single-input-log.gz
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/v20-single-input-log.gz
+END
+sample-conf.file.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/sample-conf.file.xml
+END
+truncated-trace-output
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/truncated-trace-output
+END
+folder-input-trace.json.gz
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/folder-input-trace.json.gz
+END
+dispatch-sample-v20-jt-log.gz
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/dispatch-sample-v20-jt-log.gz
+END
+dispatch-topology-output.json.gz
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/dispatch-topology-output.json.gz
+END
+truncated-topology-output
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/truncated-topology-output
+END
+counters-test-trace.json.gz
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/counters-test-trace.json.gz
+END
+sample-job-tracker-logs.gz
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/sample-job-tracker-logs.gz
+END
+truncated-job-tracker-log
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/truncated-job-tracker-log
+END
+goldFoldedTrace.json.gz
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/goldFoldedTrace.json.gz
+END
+job-tracker-logs-topology-output
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/job-tracker-logs-topology-output
+END
+v20-single-input-log-event-classes.text.gz
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/v20-single-input-log-event-classes.text.gz
+END
+job-tracker-logs-trace-output.gz
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/small-trace-test/job-tracker-logs-trace-output.gz
+END

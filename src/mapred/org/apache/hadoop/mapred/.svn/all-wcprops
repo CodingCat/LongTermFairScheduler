@@ -1,0 +1,1019 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred
+END
+Operation.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Operation.java
+END
+FileAlreadyExistsException.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/FileAlreadyExistsException.java
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Utils.java
+END
+MapTaskStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MapTaskStatus.java
+END
+MapRunnable.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MapRunnable.java
+END
+AuditLogger.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/AuditLogger.java
+END
+TaskController.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskController.java
+END
+OutputCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/OutputCollector.java
+END
+InvalidFileTypeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/InvalidFileTypeException.java
+END
+JVMId.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JVMId.java
+END
+RamManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/RamManager.java
+END
+JobStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobStatus.java
+END
+QueueManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/QueueManager.java
+END
+SequenceFileAsTextRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SequenceFileAsTextRecordReader.java
+END
+HistoryViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/HistoryViewer.java
+END
+ClusterStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/ClusterStatus.java
+END
+JobTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobTracker.java
+END
+JobInProgress.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobInProgress.java
+END
+JobInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobInfo.java
+END
+JobStatusChangeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobStatusChangeEvent.java
+END
+Clock.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Clock.java
+END
+JobConfigurable.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobConfigurable.java
+END
+TaskReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskReport.java
+END
+MapReducePolicyProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MapReducePolicyProvider.java
+END
+Reporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Reporter.java
+END
+Task.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Task.java
+END
+QueueAclsInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/QueueAclsInfo.java
+END
+MapRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MapRunner.java
+END
+OutputLogFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/OutputLogFilter.java
+END
+JobACLsManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobACLsManager.java
+END
+JobClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobClient.java
+END
+CommitTaskAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/CommitTaskAction.java
+END
+TaskLogServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskLogServlet.java
+END
+TaskTrackerManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskTrackerManager.java
+END
+JobTrackerInstrumentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobTrackerInstrumentation.java
+END
+InputSplit.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/InputSplit.java
+END
+KillTaskAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/KillTaskAction.java
+END
+HeartbeatResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/HeartbeatResponse.java
+END
+JobQueueClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobQueueClient.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/package.html
+END
+ResourceEstimator.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/ResourceEstimator.java
+END
+JvmTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JvmTask.java
+END
+InterTrackerProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/InterTrackerProtocol.java
+END
+Child.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Child.java
+END
+JobHistoryServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobHistoryServer.java
+END
+IFileInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/IFileInputStream.java
+END
+FileOutputCommitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/FileOutputCommitter.java
+END
+JvmManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JvmManager.java
+END
+ShuffleExceptionTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/ShuffleExceptionTracker.java
+END
+FileSplit.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/FileSplit.java
+END
+JobInProgressListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobInProgressListener.java
+END
+TaskRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskRunner.java
+END
+SkipBadRecords.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SkipBadRecords.java
+END
+MapReduceBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MapReduceBase.java
+END
+TaskStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskStatus.java
+END
+JobSubmissionProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobSubmissionProtocol.java
+END
+RawKeyValueIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/RawKeyValueIterator.java
+END
+UserLogCleaner.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/UserLogCleaner.java
+END
+AdminOperationsProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/AdminOperationsProtocol.java
+END
+TaskInProgress.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskInProgress.java
+END
+TaskTracker.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskTracker.java
+END
+KeyValueLineRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/KeyValueLineRecordReader.java
+END
+JobConf.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobConf.java
+END
+MultiFileInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MultiFileInputFormat.java
+END
+TaskLogAppender.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskLogAppender.java
+END
+TimeBucketMetrics.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TimeBucketMetrics.java
+END
+Mapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Mapper.java
+END
+TaskGraphServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskGraphServlet.java
+END
+ReduceTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/ReduceTask.java
+END
+JSPUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JSPUtil.java
+END
+SequenceFileAsBinaryOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SequenceFileAsBinaryOutputFormat.java
+END
+IsolationRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/IsolationRunner.java
+END
+ID.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/ID.java
+END
+JobHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobHistory.java
+END
+JobTrackerMetricsSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobTrackerMetricsSource.java
+END
+MapTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MapTask.java
+END
+JobInProgress_Counter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobInProgress_Counter.properties
+END
+TIPStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TIPStatus.java
+END
+RecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/RecordReader.java
+END
+JobTrackerStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobTrackerStatistics.java
+END
+JobEndNotifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobEndNotifier.java
+END
+JobQueueTaskScheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobQueueTaskScheduler.java
+END
+TaskTrackerInstrumentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskTrackerInstrumentation.java
+END
+MultiFileSplit.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MultiFileSplit.java
+END
+InputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/InputFormat.java
+END
+BufferSorter.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/BufferSorter.java
+END
+LineRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/LineRecordReader.java
+END
+FileOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/FileOutputFormat.java
+END
+RecordWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/RecordWriter.java
+END
+TaskTrackerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskTrackerAction.java
+END
+Task_Counter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Task_Counter.properties
+END
+BasicTypeSorterBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/BasicTypeSorterBase.java
+END
+DefaultJobHistoryParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/DefaultJobHistoryParser.java
+END
+TaskMemoryManagerThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskMemoryManagerThread.java
+END
+RawHistoryFileServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/RawHistoryFileServlet.java
+END
+NodeHealthCheckerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/NodeHealthCheckerService.java
+END
+JobChangeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobChangeEvent.java
+END
+TaskTrackerStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskTrackerStatus.java
+END
+ReduceTaskRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/ReduceTaskRunner.java
+END
+KillJobAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/KillJobAction.java
+END
+InvalidInputException.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/InvalidInputException.java
+END
+JobID.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobID.java
+END
+IFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/IFile.java
+END
+CompletedJobStatusStore.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/CompletedJobStatusStore.java
+END
+Reducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Reducer.java
+END
+CleanupQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/CleanupQueue.java
+END
+ReduceTaskStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/ReduceTaskStatus.java
+END
+MapOutputFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MapOutputFile.java
+END
+SequenceFileOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SequenceFileOutputFormat.java
+END
+TaskLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskLog.java
+END
+JettyBugMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JettyBugMonitor.java
+END
+TaskAttemptContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskAttemptContext.java
+END
+JobLocalizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobLocalizer.java
+END
+JobTrackerMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobTrackerMXBean.java
+END
+LinuxTaskController.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/LinuxTaskController.java
+END
+TaskTrackerMetricsSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskTrackerMetricsSource.java
+END
+SequenceFileAsBinaryInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SequenceFileAsBinaryInputFormat.java
+END
+StatisticsCollector.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/StatisticsCollector.java
+END
+DisallowedTaskTrackerException.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/DisallowedTaskTrackerException.java
+END
+InvalidJobConfException.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/InvalidJobConfException.java
+END
+MapFileOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MapFileOutputFormat.java
+END
+RunningJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/RunningJob.java
+END
+JobPriority.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobPriority.java
+END
+ACLsManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/ACLsManager.java
+END
+TaskAttemptID.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskAttemptID.java
+END
+TaskID.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskID.java
+END
+LocalJobRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/LocalJobRunner.java
+END
+FileInputFormat_Counter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/FileInputFormat_Counter.properties
+END
+OutputCommitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/OutputCommitter.java
+END
+EagerTaskInitializationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/EagerTaskInitializationListener.java
+END
+JobProfile.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobProfile.java
+END
+TaskCompletionEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskCompletionEvent.java
+END
+TaskScheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskScheduler.java
+END
+Counters.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Counters.java
+END
+TaskUmbilicalProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskUmbilicalProtocol.java
+END
+ShuffleServerInstrumentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/ShuffleServerInstrumentation.java
+END
+LimitTasksPerJobTaskScheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/LimitTasksPerJobTaskScheduler.java
+END
+TaskTrackerMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskTrackerMXBean.java
+END
+QueueMetrics.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/QueueMetrics.java
+END
+MRConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MRConstants.java
+END
+TextInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TextInputFormat.java
+END
+MapTaskCompletionEventsUpdate.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MapTaskCompletionEventsUpdate.java
+END
+IFileOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/IFileOutputStream.java
+END
+SequenceFileAsTextInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SequenceFileAsTextInputFormat.java
+END
+IndexCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/IndexCache.java
+END
+JobQueueInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobQueueInfo.java
+END
+JobQueueJobInProgressListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobQueueJobInProgressListener.java
+END
+MergeSorter.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MergeSorter.java
+END
+Partitioner.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Partitioner.java
+END
+SortedRanges.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SortedRanges.java
+END
+SequenceFileInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SequenceFileInputFormat.java
+END
+JvmContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JvmContext.java
+END
+ReinitTrackerAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/ReinitTrackerAction.java
+END
+FileInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/FileInputFormat.java
+END
+OutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/OutputFormat.java
+END
+DefaultTaskController.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/DefaultTaskController.java
+END
+TextOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TextOutputFormat.java
+END
+JobContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/JobContext.java
+END
+TaskLogsTruncater.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/TaskLogsTruncater.java
+END
+Merger.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Merger.java
+END
+SpillRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SpillRecord.java
+END
+KeyValueTextInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/KeyValueTextInputFormat.java
+END
+FileOutputFormat_Counter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/FileOutputFormat_Counter.properties
+END
+Queue.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/Queue.java
+END
+InfoMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/InfoMap.java
+END
+MapTaskRunner.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/MapTaskRunner.java
+END
+SequenceFileRecordReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SequenceFileRecordReader.java
+END
+LaunchTaskAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/LaunchTaskAction.java
+END
+SequenceFileInputFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapred/SequenceFileInputFilter.java
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/thriftfs/gen-java/org/apache/hadoop/thriftfs/api
+END
+ThriftHadoopFileSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/thriftfs/gen-java/org/apache/hadoop/thriftfs/api/ThriftHadoopFileSystem.java
+END
+BlockLocation.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/thriftfs/gen-java/org/apache/hadoop/thriftfs/api/BlockLocation.java
+END
+FileStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/thriftfs/gen-java/org/apache/hadoop/thriftfs/api/FileStatus.java
+END
+MalformedInputException.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/thriftfs/gen-java/org/apache/hadoop/thriftfs/api/MalformedInputException.java
+END
+ThriftIOException.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/thriftfs/gen-java/org/apache/hadoop/thriftfs/api/ThriftIOException.java
+END
+ThriftHandle.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/thriftfs/gen-java/org/apache/hadoop/thriftfs/api/ThriftHandle.java
+END
+Pathname.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/thriftfs/gen-java/org/apache/hadoop/thriftfs/api/Pathname.java
+END

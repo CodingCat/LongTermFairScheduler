@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/statistics/job
+END
+JobStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/statistics/job/JobStatistics.java
+END
+ReduceTaskStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/statistics/job/ReduceTaskStatistics.java
+END
+JobStatisticsInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/statistics/job/JobStatisticsInterface.java
+END
+MapTaskStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/statistics/job/MapTaskStatistics.java
+END
+TaskStatistics.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/vaidya/src/java/org/apache/hadoop/vaidya/statistics/job/TaskStatistics.java
+END

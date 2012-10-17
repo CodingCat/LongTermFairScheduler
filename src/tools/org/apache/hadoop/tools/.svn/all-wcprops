@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/tools/org/apache/hadoop/tools
+END
+HadoopArchives.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/tools/org/apache/hadoop/tools/HadoopArchives.java
+END
+DistCp_Counter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/tools/org/apache/hadoop/tools/DistCp_Counter.properties
+END
+DistTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/tools/org/apache/hadoop/tools/DistTool.java
+END
+DistCp.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/tools/org/apache/hadoop/tools/DistCp.java
+END
+Logalyzer.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/tools/org/apache/hadoop/tools/Logalyzer.java
+END
+DistCh.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/tools/org/apache/hadoop/tools/DistCh.java
+END

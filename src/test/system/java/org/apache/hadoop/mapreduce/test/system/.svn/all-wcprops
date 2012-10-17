@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system
+END
+JTProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/JTProtocol.java
+END
+MRCluster.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/MRCluster.java
+END
+MRDaemonClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/MRDaemonClient.java
+END
+FinishTaskControlAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/FinishTaskControlAction.java
+END
+TTInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/TTInfo.java
+END
+JobInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/JobInfo.java
+END
+TTClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/TTClient.java
+END
+TTTaskInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/TTTaskInfo.java
+END
+TTProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/TTProtocol.java
+END
+JTClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/JTClient.java
+END
+TaskInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/system/java/org/apache/hadoop/mapreduce/test/system/TaskInfo.java
+END

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf
+END
+taskcontroller.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/taskcontroller.cfg
+END
+hdfs-site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/hdfs-site.xml
+END
+hadoop-policy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/hadoop-policy.xml
+END
+capacity-scheduler.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/capacity-scheduler.xml
+END
+core-site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/core-site.xml
+END
+hadoop-env.sh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/hadoop-env.sh
+END
+mapred-queue-acls.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/mapred-queue-acls.xml
+END
+mapred-site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/mapred-site.xml
+END
+commons-logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/commons-logging.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/log4j.properties
+END
+hadoop-metrics2.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/templates/conf/hadoop-metrics2.properties
+END

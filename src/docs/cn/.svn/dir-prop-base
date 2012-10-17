@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 17
+build
+uming.conf
+
+K 9
+svnignore
+V 10
+uming.conf
+END

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol
+END
+DatanodeProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/DatanodeProtocol.java
+END
+InterDatanodeProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/InterDatanodeProtocol.java
+END
+BlockRecoveryInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/BlockRecoveryInfo.java
+END
+BlocksWithLocations.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/BlocksWithLocations.java
+END
+DisallowedDatanodeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/DisallowedDatanodeException.java
+END
+UpgradeCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/UpgradeCommand.java
+END
+BlockMetaDataInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/BlockMetaDataInfo.java
+END
+NamenodeProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/NamenodeProtocol.java
+END
+NamespaceInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/NamespaceInfo.java
+END
+BlockCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/BlockCommand.java
+END
+DatanodeRegistration.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/DatanodeRegistration.java
+END
+KeyUpdateCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/KeyUpdateCommand.java
+END
+BalancerBandwidthCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/BalancerBandwidthCommand.java
+END
+DatanodeCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/protocol/DatanodeCommand.java
+END

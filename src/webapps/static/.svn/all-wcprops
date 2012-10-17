@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/webapps/static
+END
+hadoop.css
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/webapps/static/hadoop.css
+END
+jobtracker.js
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/webapps/static/jobtracker.js
+END
+jobconf.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/webapps/static/jobconf.xsl
+END
+hadoop-logo.jpg
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/webapps/static/hadoop-logo.jpg
+END
+sorttable.js
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/webapps/static/sorttable.js
+END

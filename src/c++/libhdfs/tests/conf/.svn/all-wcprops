@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/libhdfs/tests/conf
+END
+hdfs-site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/libhdfs/tests/conf/hdfs-site.xml
+END
+core-site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/libhdfs/tests/conf/core-site.xml
+END
+mapred-site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/libhdfs/tests/conf/mapred-site.xml
+END
+hadoop-site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/libhdfs/tests/conf/hadoop-site.xml
+END
+slaves
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/c++/libhdfs/tests/conf/slaves
+END
