@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/testjar
+END
+CustomOutputCommitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/testjar/CustomOutputCommitter.java
+END
+GenerateTaskChildProcess.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/testjar/GenerateTaskChildProcess.java
+END
+ExternalMapperReducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/testjar/ExternalMapperReducer.java
+END
+UserNamePermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/testjar/UserNamePermission.java
+END
+ClassWordCount.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/testjar/ClassWordCount.java
+END
+JobKillCommitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/testjar/JobKillCommitter.java
+END
+ExternalWritable.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/testjar/ExternalWritable.java
+END

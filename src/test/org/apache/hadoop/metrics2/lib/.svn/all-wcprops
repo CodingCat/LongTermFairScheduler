@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/metrics2/lib
+END
+TestMetricsRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/metrics2/lib/TestMetricsRegistry.java
+END
+TestMetricMutables.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/metrics2/lib/TestMetricMutables.java
+END

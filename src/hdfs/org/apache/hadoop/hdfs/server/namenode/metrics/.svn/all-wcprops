@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/namenode/metrics
+END
+FSNamesystemMBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/namenode/metrics/FSNamesystemMBean.java
+END
+NameNodeInstrumentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/namenode/metrics/NameNodeInstrumentation.java
+END

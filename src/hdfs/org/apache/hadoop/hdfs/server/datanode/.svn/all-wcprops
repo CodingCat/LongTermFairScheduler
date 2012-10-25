@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode
+END
+FSDatasetInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/FSDatasetInterface.java
+END
+DataXceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/DataXceiver.java
+END
+BlockMetadataHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/BlockMetadataHeader.java
+END
+DatanodeBlockInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/DatanodeBlockInfo.java
+END
+BlockTransferThrottler.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/BlockTransferThrottler.java
+END
+FSDatasetAsyncDiskService.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/FSDatasetAsyncDiskService.java
+END
+DataNodeMXBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/DataNodeMXBean.java
+END
+BlockAlreadyExistsException.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/BlockAlreadyExistsException.java
+END
+FSDataset.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/FSDataset.java
+END
+UpgradeObjectDatanode.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/UpgradeObjectDatanode.java
+END
+DataNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/DataNode.java
+END
+BlockReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/BlockReceiver.java
+END
+UpgradeManagerDatanode.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/UpgradeManagerDatanode.java
+END
+DataXceiverServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/DataXceiverServer.java
+END
+BlockSender.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/BlockSender.java
+END
+SecureDataNodeStarter.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/SecureDataNodeStarter.java
+END
+DataStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/DataStorage.java
+END
+DataBlockScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/hdfs/org/apache/hadoop/hdfs/server/datanode/DataBlockScanner.java
+END

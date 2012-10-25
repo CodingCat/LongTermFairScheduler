@@ -19,7 +19,6 @@
 .launches/
 .project
 .settings
-.svn
 autom4te.cache
 build/
 build.properties

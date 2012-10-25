@@ -1,0 +1,467 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs
+END
+TestMissingBlocksAlert.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestMissingBlocksAlert.java
+END
+TestFileCreation.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileCreation.java
+END
+TestFileCorruption.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileCorruption.java
+END
+TestDFSRename.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSRename.java
+END
+NNBench.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/NNBench.java
+END
+TestDFSUpgradeFromImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSUpgradeFromImage.java
+END
+TestRestartDFS.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestRestartDFS.java
+END
+TestDFSClientExcludedNodes.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSClientExcludedNodes.java
+END
+TestSafeMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestSafeMode.java
+END
+TestSmallBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestSmallBlock.java
+END
+BenchmarkThroughput.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/BenchmarkThroughput.java
+END
+TestHDFSTrash.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestHDFSTrash.java
+END
+TestDFSMkdirs.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSMkdirs.java
+END
+TestDecommission.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDecommission.java
+END
+TestDFSRemove.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSRemove.java
+END
+MiniDFSCluster.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/MiniDFSCluster.java
+END
+TestCrcCorruption.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestCrcCorruption.java
+END
+TestListPathServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestListPathServlet.java
+END
+TestBlocksScheduledCounter.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestBlocksScheduledCounter.java
+END
+AppendTestUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/AppendTestUtil.java
+END
+TestDFSClientRetries.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSClientRetries.java
+END
+TestFileStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileStatus.java
+END
+TestFileCreationDelete.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileCreationDelete.java
+END
+TestQuota.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestQuota.java
+END
+TestFileAppend2.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileAppend2.java
+END
+TestShortCircuitLocalRead.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestShortCircuitLocalRead.java
+END
+TestDFSFinalize.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSFinalize.java
+END
+TestDataTransferProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDataTransferProtocol.java
+END
+TestDefaultNameNodePort.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDefaultNameNodePort.java
+END
+TestFileCreationClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileCreationClient.java
+END
+TestDatanodeBlockScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDatanodeBlockScanner.java
+END
+TestFileConcurrentReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileConcurrentReader.java
+END
+TestSetrepIncreasing.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestSetrepIncreasing.java
+END
+hadoop-14-dfs-dir.tgz
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/hadoop-14-dfs-dir.tgz
+END
+TestFileAppend.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileAppend.java
+END
+TestLeaseRecovery.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestLeaseRecovery.java
+END
+TestFSInputChecker.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFSInputChecker.java
+END
+TestAbandonBlock.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestAbandonBlock.java
+END
+TestDFSShellGenericOptions.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSShellGenericOptions.java
+END
+TestFileCreationNamenodeRestart.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileCreationNamenodeRestart.java
+END
+TestSeekBug.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestSeekBug.java
+END
+TestInjectionForSimulatedStorage.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestInjectionForSimulatedStorage.java
+END
+TestDFSRollback.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSRollback.java
+END
+TestHDFSFileSystemContract.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestHDFSFileSystemContract.java
+END
+TestSetrepDecreasing.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestSetrepDecreasing.java
+END
+TestLeaseRecovery2.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestLeaseRecovery2.java
+END
+TestFileAppend3.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileAppend3.java
+END
+TestPread.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestPread.java
+END
+TestSetTimes.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestSetTimes.java
+END
+TestSyncingWriterInterrupted.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestSyncingWriterInterrupted.java
+END
+TestModTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestModTime.java
+END
+NNBenchWithoutMR.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/NNBenchWithoutMR.java
+END
+hadoop-dfs-dir.txt
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/hadoop-dfs-dir.txt
+END
+TestHDFSServerPorts.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestHDFSServerPorts.java
+END
+TestDFSShell.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSShell.java
+END
+TestHftpFileSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestHftpFileSystem.java
+END
+TestReplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestReplication.java
+END
+DFSTestUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/DFSTestUtil.java
+END
+TestDatanodeReport.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDatanodeReport.java
+END
+TestByteRangeInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestByteRangeInputStream.java
+END
+TestGetBlocks.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestGetBlocks.java
+END
+TestDFSStorageStateRecovery.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSStorageStateRecovery.java
+END
+DataNodeCluster.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/DataNodeCluster.java
+END
+TestRenameWhileOpen.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestRenameWhileOpen.java
+END
+TestFSOutputSummer.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFSOutputSummer.java
+END
+TestFileCreationEmpty.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileCreationEmpty.java
+END
+UpgradeUtilities.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/UpgradeUtilities.java
+END
+TestDFSUpgrade.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSUpgrade.java
+END
+TestDFSPermission.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSPermission.java
+END
+TestDatanodeDeath.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDatanodeDeath.java
+END
+TestLocalDFS.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestLocalDFS.java
+END
+TestDistributedFileSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDistributedFileSystem.java
+END
+TestMultiThreadedSync.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestMultiThreadedSync.java
+END
+TestDFSStartupVersions.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestDFSStartupVersions.java
+END
+TestLease.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestLease.java
+END
+TestFileAppend4.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestFileAppend4.java
+END
+TestBalancerBandwidth.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/hdfs/TestBalancerBandwidth.java
+END

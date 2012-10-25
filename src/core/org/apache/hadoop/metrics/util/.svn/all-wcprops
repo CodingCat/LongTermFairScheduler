@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util
+END
+MetricsRegistry.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util/MetricsRegistry.java
+END
+MBeanUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util/MBeanUtil.java
+END
+MetricsTimeVaryingInt.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingInt.java
+END
+MetricsBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util/MetricsBase.java
+END
+MetricsTimeVaryingRate.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingRate.java
+END
+MetricsLongValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util/MetricsLongValue.java
+END
+package-info.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util/package-info.java
+END
+MetricsTimeVaryingLong.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util/MetricsTimeVaryingLong.java
+END
+MetricsDynamicMBeanBase.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util/MetricsDynamicMBeanBase.java
+END
+MetricsIntValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/util/MetricsIntValue.java
+END

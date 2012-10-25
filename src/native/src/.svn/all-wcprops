@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/native/src
+END
+org_apache_hadoop.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/native/src/org_apache_hadoop.h
+END

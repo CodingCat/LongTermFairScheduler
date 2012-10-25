@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/file
+END
+FileContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/file/FileContext.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/metrics/file/package.html
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/rpm/init.d
+END
+hadoop-historyserver
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/rpm/init.d/hadoop-historyserver
+END
+hadoop-secondarynamenode
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/rpm/init.d/hadoop-secondarynamenode
+END
+hadoop-tasktracker
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/rpm/init.d/hadoop-tasktracker
+END
+hadoop-datanode
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/rpm/init.d/hadoop-datanode
+END
+hadoop-jobtracker
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/rpm/init.d/hadoop-jobtracker
+END
+hadoop-namenode
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/rpm/init.d/hadoop-namenode
+END

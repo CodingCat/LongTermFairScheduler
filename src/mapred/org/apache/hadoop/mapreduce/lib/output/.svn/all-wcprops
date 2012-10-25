@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output
+END
+FilterOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output/FilterOutputFormat.java
+END
+MultipleOutputs.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output/MultipleOutputs.java
+END
+SequenceFileOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output/SequenceFileOutputFormat.java
+END
+FileOutputFormat_Counter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output/FileOutputFormat_Counter.properties
+END
+FileOutputCommitter.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output/FileOutputCommitter.java
+END
+NullOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output/NullOutputFormat.java
+END
+FileOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output/FileOutputFormat.java
+END
+LazyOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output/LazyOutputFormat.java
+END
+SequenceFileAsBinaryOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output/SequenceFileAsBinaryOutputFormat.java
+END
+TextOutputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/output/TextOutputFormat.java
+END

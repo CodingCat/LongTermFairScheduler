@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html
+END
+split.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html/split.xsl
+END
+book-to-menu.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html/book-to-menu.xsl
+END
+pathutils.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html/pathutils.xsl
+END
+site-to-xhtml.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html/site-to-xhtml.xsl
+END
+document-to-html.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html/document-to-html.xsl
+END
+dotdots.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html/dotdots.xsl
+END
+renderlogo.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html/renderlogo.xsl
+END
+strip_namespaces.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html/strip_namespaces.xsl
+END
+tabutils.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html/tabutils.xsl
+END
+tab-to-menu.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/docs/cn/src/documentation/skins/common/xslt/html/tab-to-menu.xsl
+END

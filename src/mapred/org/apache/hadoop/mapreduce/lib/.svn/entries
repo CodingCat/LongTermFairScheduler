@@ -1,0 +1,52 @@
+10
+
+dir
+1399070
+http://svn.apache.org/repos/asf/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib
+http://svn.apache.org/repos/asf
+
+
+
+2012-04-28T04:33:19.957845Z
+1331687
+harsh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13f79535-47bb-0310-9956-ffa450edef68
+
+input
+dir
+
+output
+dir
+
+db
+dir
+
+fieldsel
+dir
+
+reduce
+dir
+
+partition
+dir
+
+jobcontrol
+dir
+
+map
+dir
+

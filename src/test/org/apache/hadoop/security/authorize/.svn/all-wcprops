@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/security/authorize
+END
+HadoopPolicyProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/security/authorize/HadoopPolicyProvider.java
+END
+TestServiceLevelAuthorization.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/security/authorize/TestServiceLevelAuthorization.java
+END
+TestAccessControlList.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/security/authorize/TestAccessControlList.java
+END

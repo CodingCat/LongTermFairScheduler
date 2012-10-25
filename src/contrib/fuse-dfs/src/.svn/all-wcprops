@@ -1,0 +1,239 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src
+END
+fuse_impls_mknod.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_mknod.c
+END
+fuse_impls_readdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_readdir.c
+END
+fuse_impls_rmdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_rmdir.c
+END
+fuse_impls_utimens.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_utimens.c
+END
+fuse_impls_truncate.c
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_truncate.c
+END
+fuse_connect.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_connect.c
+END
+fuse_impls_symlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_symlink.c
+END
+fuse_options.c
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_options.c
+END
+fuse_impls_write.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_write.c
+END
+fuse_connect.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_connect.h
+END
+fuse_impls_chmod.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_chmod.c
+END
+fuse_file_handle.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_file_handle.h
+END
+fuse_options.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_options.h
+END
+fuse_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_init.c
+END
+fuse_impls_unlink.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_unlink.c
+END
+fuse_impls_open.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_open.c
+END
+fuse_impls_create.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_create.c
+END
+fuse_init.h
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_init.h
+END
+fuse_dfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_dfs.c
+END
+fuse_impls_getattr.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_getattr.c
+END
+fuse_impls_read.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_read.c
+END
+fuse_stat_struct.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_stat_struct.c
+END
+fuse_dfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_dfs.h
+END
+fuse_trash.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_trash.c
+END
+fuse_impls_chown.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_chown.c
+END
+fuse_impls_release.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_release.c
+END
+fuse_stat_struct.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_stat_struct.h
+END
+fuse_impls_flush.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_flush.c
+END
+fuse_trash.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_trash.h
+END
+fuse_impls.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls.h
+END
+fuse_users.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_users.c
+END
+fuse_context_handle.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_context_handle.h
+END
+fuse_dfs_wrapper.sh
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_dfs_wrapper.sh
+END
+fuse_impls_access.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_access.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/Makefile.am
+END
+fuse_users.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_users.h
+END
+fuse_impls_statfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_statfs.c
+END
+fuse_impls_mkdir.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_mkdir.c
+END
+fuse_impls_rename.c
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/fuse-dfs/src/fuse_impls_rename.c
+END

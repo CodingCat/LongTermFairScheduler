@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/fs/kfs
+END
+KFSInputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/fs/kfs/KFSInputStream.java
+END
+KFSOutputStream.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/fs/kfs/KFSOutputStream.java
+END
+KosmosFileSystem.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/fs/kfs/KosmosFileSystem.java
+END
+IFSImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/fs/kfs/IFSImpl.java
+END
+KFSImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/fs/kfs/KFSImpl.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/fs/kfs/package.html
+END

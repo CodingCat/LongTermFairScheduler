@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/histogram-tests
+END
+gold-three-values.json
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/histogram-tests/gold-three-values.json
+END
+input-only-one-value.json
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/histogram-tests/input-only-one-value.json
+END
+gold-minimal.json
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/histogram-tests/gold-minimal.json
+END
+input-one-value-many-repeats.json
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/histogram-tests/input-one-value-many-repeats.json
+END
+gold-only-one-value.json
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/histogram-tests/gold-only-one-value.json
+END
+gold-one-value-many-repeats.json
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/histogram-tests/gold-one-value-many-repeats.json
+END
+input-three-values.json
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/histogram-tests/input-three-values.json
+END
+input-minimal.json
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/tools/data/rumen/histogram-tests/input-minimal.json
+END

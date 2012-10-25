@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix
+END
+TestGridmixSubmission.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/TestGridmixSubmission.java
+END
+TestGridmixRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/TestGridmixRecord.java
+END
+TestSleepJob.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/TestSleepJob.java
+END
+GridmixTestUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/GridmixTestUtils.java
+END
+TestFileQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/TestFileQueue.java
+END
+DebugJobProducer.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/DebugJobProducer.java
+END
+TestRecordFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/TestRecordFactory.java
+END
+TestRandomAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/TestRandomAlgorithm.java
+END
+DebugJobFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/DebugJobFactory.java
+END
+TestFilePool.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/TestFilePool.java
+END
+TestUserResolve.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/contrib/gridmix/src/test/org/apache/hadoop/mapred/gridmix/TestUserResolve.java
+END

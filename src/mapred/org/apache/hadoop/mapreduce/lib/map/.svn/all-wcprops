@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/map
+END
+InverseMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/map/InverseMapper.java
+END
+MultithreadedMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/map/MultithreadedMapper.java
+END
+TokenCounterMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/mapred/org/apache/hadoop/mapreduce/lib/map/TokenCounterMapper.java
+END

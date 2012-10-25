@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/classification
+END
+InterfaceStability.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/classification/InterfaceStability.java
+END
+InterfaceAudience.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/classification/InterfaceAudience.java
+END

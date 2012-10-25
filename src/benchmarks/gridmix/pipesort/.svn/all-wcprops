@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/pipesort
+END
+text-sort.small
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/pipesort/text-sort.small
+END
+text-sort.large
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/pipesort/text-sort.large
+END
+text-sort.medium
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/pipesort/text-sort.medium
+END

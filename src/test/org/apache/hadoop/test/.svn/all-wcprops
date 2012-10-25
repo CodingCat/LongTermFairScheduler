@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/test
+END
+AllTestDriver.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/test/AllTestDriver.java
+END
+MoreAsserts.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/test/MoreAsserts.java
+END
+MetricsAsserts.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/test/MetricsAsserts.java
+END

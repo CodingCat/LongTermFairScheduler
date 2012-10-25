@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/io/serializer
+END
+JavaSerialization.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/io/serializer/JavaSerialization.java
+END
+Deserializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/io/serializer/Deserializer.java
+END
+SerializationFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/io/serializer/SerializationFactory.java
+END
+JavaSerializationComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/io/serializer/JavaSerializationComparator.java
+END
+WritableSerialization.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/io/serializer/WritableSerialization.java
+END
+Serializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/io/serializer/Serializer.java
+END
+DeserializerComparator.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/io/serializer/DeserializerComparator.java
+END
+Serialization.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/io/serializer/Serialization.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop/io/serializer/package.html
+END

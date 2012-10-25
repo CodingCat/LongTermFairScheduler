@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/deb/hadoop.control
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/deb/hadoop.control/control
+END
+postinst
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/deb/hadoop.control/postinst
+END
+postrm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/deb/hadoop.control/postrm
+END
+preinst
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/deb/hadoop.control/preinst
+END
+conffile
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/deb/hadoop.control/conffile
+END
+prerm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/packages/deb/hadoop.control/prerm
+END

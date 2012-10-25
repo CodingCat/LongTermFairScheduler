@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts
+END
+monsterQueriesHod
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/monsterQueriesHod
+END
+monsterQueriesToSameCluster
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/monsterQueriesToSameCluster
+END
+allToSameCluster
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/allToSameCluster
+END
+allThroughHod
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/allThroughHod
+END
+maxentHod
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/maxentHod
+END
+maxentToSameCluster
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/maxentToSameCluster
+END
+textSortHod
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/textSortHod
+END
+textSortToSameCluster
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/textSortToSameCluster
+END
+webdataScanHod
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/webdataScanHod
+END
+webdataScanToSameCluster
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/webdataScanToSameCluster
+END
+sleep_if_too_busy
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/sleep_if_too_busy
+END
+webdataSortHod
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/webdataSortHod
+END
+webdataSortToSameCluster
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/benchmarks/gridmix/submissionScripts/webdataSortToSameCluster
+END

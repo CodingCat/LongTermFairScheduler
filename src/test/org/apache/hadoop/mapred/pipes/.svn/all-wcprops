@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/mapred/pipes
+END
+TestPipes.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/mapred/pipes/TestPipes.java
+END
+TestPipesAsDifferentUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/mapred/pipes/TestPipesAsDifferentUser.java
+END
+WordCountInputFormat.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/1339303/hadoop/common/tags/release-1.0.3/src/test/org/apache/hadoop/mapred/pipes/WordCountInputFormat.java
+END
