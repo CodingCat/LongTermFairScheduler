@@ -29,7 +29,7 @@
 	</property>
 	<property>
 		<name>mapred.fairscheduler.creditupdateinterval</name>
-		<value>60</value>
+		<value>60000</value>
 	</property>
 </configuration>
 

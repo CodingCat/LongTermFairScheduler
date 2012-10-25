@@ -58,9 +58,8 @@ public class PoolManager {
 		private PoolManager poolMgr;
 		private FileWriter creditsReporter = null;
 		public CreditUpdater(PoolManager poolM){
-			Configuration conf = scheduler.getConf();//Interval * 1000;
-			this.updateThreadPeriod = conf.getLong("mapred.fairscheduler.update.interval", 500);
 			this.poolMgr = poolM;
+			this.updateThreadPeriod = this.poolMgr.creditUpdateInterval;
 			try {
 				this.creditsReporter = new FileWriter("creditsRecord_" + System.currentTimeMillis(), true);
 				creditsReporter.write(String.valueOf(this.updateThreadPeriod));
@@ -96,7 +95,7 @@ public class PoolManager {
 						appendRecords(collectPoolStatus(pool.getName()));
 					}
 					creditsReporter.flush();
-					Thread.sleep(this.updateThreadPeriod);
+					Thread.sleep(this.updateThreadPeriod * 1000);
 				}
 				catch(Exception e){
 					e.printStackTrace();
@@ -176,7 +175,7 @@ public class PoolManager {
   private int totalReduceDemands = 0;
   private int totalMapCapacity = 0;
   private int totalReduceCapacity = 0;
-  private float updateInterval = 0;
+  private long creditUpdateInterval = 0;
   
   public PoolManager(FairScheduler scheduler) {
     this.scheduler = scheduler;
@@ -187,7 +186,7 @@ public class PoolManager {
     Configuration conf = scheduler.getConf();
     this.poolNameProperty = conf.get(
         "mapred.fairscheduler.poolnameproperty", "user.name");
-    this.updateInterval = (float)scheduler.updateInterval/1000;//conf.getInt("mapred.fairscheduler.creditupdateinterval", 60);
+    this.creditUpdateInterval = conf.getLong("mapred.fairscheduler.creditupdateinterval", 60000)/1000;
     (new CreditUpdater(this)).start();
     this.allocFile = conf.get("mapred.fairscheduler.allocation.file");
     if (allocFile == null) {
@@ -205,6 +204,14 @@ public class PoolManager {
     lastReloadAttempt = System.currentTimeMillis();
     // Create the default pool so that it shows up in the web UI
     getPool(Pool.DEFAULT_POOL_NAME);
+    //get total capacity
+    for (Pool pool : pools.values()){
+		if (!pool.getName().equals("default")) {
+			totalMapCapacity += getCapacity(pool.getName(), TaskType.MAP);
+			totalReduceCapacity += getCapacity(pool.getName(),
+					TaskType.REDUCE);
+		}
+    }
   }
   
   /**
@@ -621,11 +628,13 @@ public class PoolManager {
   }
   
   public void refreshSystemStatus(){
+	  totalMapDemands = 0;
+	  totalReduceDemands = 0;
 	  for (Pool pool : pools.values()){
-		  totalMapDemands += pool.getDemand(TaskType.MAP);
-		  totalReduceDemands += pool.getDemand(TaskType.REDUCE);
-		  totalMapCapacity += getAllocation(pool.getName(), TaskType.MAP);
-		  totalReduceCapacity += getAllocation(pool.getName(), TaskType.REDUCE);
+			if (!pool.getName().equals("default")) {
+				totalMapDemands += pool.getDemand(TaskType.MAP);
+				totalReduceDemands += pool.getDemand(TaskType.REDUCE);
+			}
 	  }
   }
   
@@ -644,6 +653,10 @@ public class PoolManager {
 	  int oldWasted = Math.max(0, totalCapacity - totalDemand);
 	  int newDemand = totalDemand - poolDemand;
 	  int newCapacity = totalCapacity - poolCapacity;
+	  LOG.warn(ttype.toString() + " totalCapacity:" + totalCapacity + 
+			  " totalDemand:" + totalDemand + 
+			  " poolCapacity:" + poolCapacity + 
+			  " poolAllocation:" + poolAllocation);
 	  if (newDemand > newCapacity) {
 		  // still someone can use more machines
 		  return Math.max(0, poolAllocation + oldWasted - (newDemand - newCapacity));
@@ -667,6 +680,8 @@ public class PoolManager {
 					  pool.getRunningTasks(TaskType.REDUCE));
 		  int capacity = (ttype == TaskType.MAP ? 
 				  getCapacity(pool.getName(), TaskType.MAP) : getCapacity(pool.getName(), TaskType.REDUCE));
+		  LOG.warn(ttype.toString() + " " + pool.getName() + " wasted:" + wasted + " allocation:" + allocation + 
+				   " capacity:" + capacity);
 		  if (allocation > capacity){
 			  gain = Math.max(0,  (allocation - capacity) - wasted);
 			  gain = -gain;
@@ -674,7 +689,7 @@ public class PoolManager {
 		  else{
 			  gain = Math.max(0, (capacity - allocation) - wasted);
 		  }
-		  pool.updateCredit(ttype, gain * this.updateInterval); // why /60?
+		  pool.updateCredit(ttype, gain * this.creditUpdateInterval); // why /60?
 	  }
 	  
   }

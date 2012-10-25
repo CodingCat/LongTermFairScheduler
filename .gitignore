@@ -3,3 +3,6 @@ credits*
 *.class
 *.jar
 logs/*
+.eclipse*
+.svn
+build
