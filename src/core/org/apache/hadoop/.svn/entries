@@ -1,107 +1,0 @@
-10
-
-dir
-1399070
-http://svn.apache.org/repos/asf/hadoop/common/tags/release-1.0.3/src/core/org/apache/hadoop
-http://svn.apache.org/repos/asf
-
-
-
-2012-05-07T18:58:18.755760Z
-1335192
-mattf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-13f79535-47bb-0310-9956-ffa450edef68
-
-http
-dir
-
-log
-dir
-
-conf
-dir
-
-net
-dir
-
-metrics2
-dir
-
-classification
-dir
-
-HadoopVersionAnnotation.java
-file
-
-
-
-
-2012-10-17T01:42:13.000000Z
-d195a1829918cad54ef4f83ec868679b
-2012-01-31T01:44:49.819446Z
-1238127
-mattf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1747
-
-jmx
-dir
-
-filecache
-dir
-
-metrics
-dir
-
-security
-dir
-
-io
-dir
-
-fs
-dir
-
-ipc
-dir
-
-util
-dir
-
-record
-dir
-
