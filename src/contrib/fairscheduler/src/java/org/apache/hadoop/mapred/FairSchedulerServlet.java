@@ -157,10 +157,11 @@ public class FairSchedulerServlet extends HttpServlet {
       out.print("<h2>Pools</h2>\n");
       out.print("<table border=\"2\" cellpadding=\"5\" cellspacing=\"2\">\n");
       out.print("<tr><th rowspan=2>Pool</th>" +
-          "<th rowspan=2>Running Jobs</th>" + 
+          "<th rowspan=2>Running Jobs</th>" +
+          "<th rowspan=2>Avr. ResponseTime</th>" +
+          "<th rowspan=2>Avr. Stretch</th>" +
           "<th colspan=5>Map Tasks</th>" + 
-          "<th colspan=5>Reduce Tasks</th>" +
-          "<th rowspan=2>Scheduling Mode</th></tr>\n<tr>" + 
+          "<th colspan=5>Reduce Tasks</th></tr>\n<tr>" +
           "<th>Min Share</th><th>Max Share</th><th>Running</th><th>Fair Share</th><th>Credits</th>" + 
           "<th>Min Share</th><th>Max Share</th><th>Running</th><th>Fair Share</th><th>Credits</th></tr>\n");
       List<Pool> pools = new ArrayList<Pool>(poolManager.getPools());
@@ -184,6 +185,8 @@ public class FairSchedulerServlet extends HttpServlet {
         out.print("<tr>");
         out.printf("<td>%s</td>", name);
         out.printf("<td>%d</td>", pool.getJobs().size());
+        out.printf("<td>%.1f</td>", pool.getResponseTime());
+        out.printf("<td>%.1f</td>", pool.getStretch());
         // Map Tasks
         out.printf("<td>%d</td>", poolManager.getAllocation(name,
             TaskType.MAP));
@@ -216,7 +219,6 @@ public class FairSchedulerServlet extends HttpServlet {
         out.printf("<td>%d</td>", runningReduces);
         out.printf("<td>%.1f</td>", pool.getReduceSchedulable().getFairShare());
         out.printf("<td>%.1f</td>", pool.getCredit(TaskType.REDUCE));
-        out.printf("<td>%s</td>", pool.getSchedulingMode());
         out.print("</tr>\n");
       }
       out.print("</table>\n");

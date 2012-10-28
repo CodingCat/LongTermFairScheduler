@@ -44,8 +44,13 @@ public class Pool {
   private PoolSchedulable mapSchedulable;
   private PoolSchedulable reduceSchedulable;
   
+  
   private float mapCredit = 0;
   private float reduceCredit = 0;
+  
+  private int nFinishedjobs = 0;
+  private float responseTime = 0;
+  private float stretch = 0;
   
   public Pool(FairScheduler scheduler, String name) {
     this.name = name;
@@ -64,13 +69,29 @@ public class Pool {
   }
   
   public void removeJob(JobInProgress job) {
+	float existingJobResponseTime = (job.finishTime - job.startTime)/1000;
     jobs.remove(job);
     mapSchedulable.removeJob(job);
     reduceSchedulable.removeJob(job);
+    //update metrics
+    nFinishedjobs++;
+    
+    responseTime = (responseTime * (nFinishedjobs - 1) + existingJobResponseTime) 
+    		/ nFinishedjobs;
+    stretch = (stretch * (nFinishedjobs - 1) + existingJobResponseTime / ((float)job.getInputLength()/1024)) 
+    		/ nFinishedjobs;
   }
   
   public String getName() {
     return name;
+  }
+  
+  public float getResponseTime(){
+	  return responseTime;
+  }
+  
+  public float getStretch(){
+	  return stretch;
   }
 
   public SchedulingMode getSchedulingMode() {

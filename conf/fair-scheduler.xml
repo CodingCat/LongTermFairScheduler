@@ -22,5 +22,6 @@
 		<maxReduces>4</maxReduces>
 		<minSharePreemptionTimeout>300</minSharePreemptionTimeout>
 	</pool>
-	<fairSharePreemptionTimeout>600</fairSharePreemptionTimeout>
+	<fairSharePreemptionTimeout>60</fairSharePreemptionTimeout>
+	<defaultMinSharePreemptionTimeout>60</defaultMinSharePreemptionTimeout>
 </allocations>
