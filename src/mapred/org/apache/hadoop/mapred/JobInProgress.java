@@ -269,7 +269,10 @@ public class JobInProgress {
     SLOTS_MILLIS_MAPS,
     SLOTS_MILLIS_REDUCES,
     FALLOW_SLOTS_MILLIS_MAPS,
-    FALLOW_SLOTS_MILLIS_REDUCES
+    FALLOW_SLOTS_MILLIS_REDUCES,
+    MAPS_RESPONSE_TIME,
+    REDUCE_START_TIME,
+    REDUCE_RESPONSE_TIME
   }
   private Counters jobCounters = new Counters();
     
@@ -2529,6 +2532,43 @@ public class JobInProgress {
                             (status.getFinishTime() - status.getStartTime()));
   }
   
+  private synchronized void updatePhaseResponseTime(TaskInProgress tip, 
+		  TaskStatus status) {
+	  Counter PhaseResponseCnt = (tip.isMapTask() ? Counter.MAPS_RESPONSE_TIME :
+			  Counter.REDUCE_RESPONSE_TIME);
+	  if (tip.isMapTask() && this.pendingMaps() == 0){
+		  //last map task successfully end
+		 jobCounters.incrCounter(PhaseResponseCnt, 
+				 (status.getFinishTime() - this.startTime)/1000);
+		 LOG.warn("CodingCat FinishedMapTask:" + this.finishedMapTasks + " NumMapTasks:" +  
+				 this.numMapTasks + " MapResponseTime:" + (status.getFinishTime() - this.startTime)/1000);
+	  }
+	  else{
+		  if (!tip.isMapTask() && !tip.isJobCleanupTask() && !tip.isJobSetupTask()){
+			  if (this.finishedReduceTasks == 1){
+				  //first reduce task
+				  jobCounters.incrCounter(Counter.REDUCE_START_TIME, 
+						  status.getStartTime());
+				  LOG.warn("CodingCat RStartTime:" + (status.getStartTime()));
+			  }
+			  if (this.pendingReduces() == 0){
+				  jobCounters.incrCounter(Counter.REDUCE_RESPONSE_TIME, 
+						  (status.getFinishTime() - jobCounters.getCounter(
+								  Counter.REDUCE_START_TIME))/1000);
+				  LOG.warn("CodingCat ReduceResponseTime:" + 
+						  (status.getFinishTime() - jobCounters.getCounter(
+								  Counter.REDUCE_START_TIME))/1000);
+			  }
+			  else
+			  {
+				  LOG.warn("CodingCat finishedRTasks:" + this.finishedReduceTasks + 
+						  " numReduceTasks:" + this.numReduceTasks);
+			  }
+		  }
+	  }
+  }
+  
+  
   /**
    * A taskid assigned to this JobInProgress has reported in successfully.
    */
@@ -2566,6 +2606,7 @@ public class JobInProgress {
     tip.completed(taskid);
     resourceEstimator.updateWithCompletedTask(status, tip);
 
+   
     // Update jobhistory 
     TaskTrackerStatus ttStatus = 
       this.jobtracker.getTaskTrackerStatus(status.getTaskTracker());
@@ -2666,6 +2707,10 @@ public class JobInProgress {
         }
       }
     }
+    //Nan
+    LOG.warn("CodingCat: map len:" + maps.length + " reduce len:" + reduces.length);
+    this.updatePhaseResponseTime(tip, status);
+    
     return true;
   }
   

@@ -396,7 +396,7 @@
             isFirst = false;
             %>
             <td rowspan="<%=totalGroup.size()%>">
-            <%=HtmlQuoting.quoteHtmlChars(totalGroup.getDisplayName())%></td>
+            <%=totalGroup.getDisplayName()%></td>
             <%
           }
           %>

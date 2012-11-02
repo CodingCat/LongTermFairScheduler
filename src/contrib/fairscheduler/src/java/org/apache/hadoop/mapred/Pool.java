@@ -22,8 +22,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 
+import org.apache.hadoop.mapred.JobInProgress.Counter;
 import org.apache.hadoop.mapreduce.TaskType;
 import org.apache.hadoop.metrics.MetricsContext;
+import org.mortbay.log.Log;
 
 /**
  * A schedulable pool of jobs.
@@ -49,8 +51,15 @@ public class Pool {
   private float reduceCredit = 0;
   
   private int nFinishedjobs = 0;
+  private float inputSize = 0;
+  private float mapInSize = 0;
+  private float reduceOutSize = 0;
   private float responseTime = 0;
+  private float mapResponseTime = 0;
+  private float reduceResponseTime = 0;
   private float stretch = 0;
+  private float mapStretch = 0;
+  private float reduceStretch = 0;
   
   public Pool(FairScheduler scheduler, String name) {
     this.name = name;
@@ -69,16 +78,39 @@ public class Pool {
   }
   
   public void removeJob(JobInProgress job) {
-	float existingJobResponseTime = (job.finishTime - job.startTime)/1000;
-    jobs.remove(job);
+	Counters mapCounters = new Counters();
+	Counters reduceCounters = new Counters();
+	boolean isFine = job.getMapCounters(mapCounters);
+	mapCounters = (isFine? mapCounters : new Counters());
+	isFine = job.getReduceCounters(reduceCounters);
+	reduceCounters = (isFine? reduceCounters : new Counters());
+	
+	float exitingJobResponseTime = (job.finishTime - job.startTime)/1000;
+	float exitingJobMResponseTime = mapCounters.getCounter(JobInProgress.Counter.MAPS_RESPONSE_TIME);
+	float exitingJobRResponseTime = reduceCounters.getCounter(JobInProgress.Counter.REDUCE_RESPONSE_TIME);
+	
+	this.mapInSize += (float)mapCounters.getCounter(FileInputFormat.Counter.BYTES_READ)/
+			(1024*1024);
+	this.reduceOutSize += (float)reduceCounters.getCounter(FileOutputFormat.Counter.BYTES_WRITTEN)/
+			(1024*1024);
+	jobs.remove(job);
     mapSchedulable.removeJob(job);
     reduceSchedulable.removeJob(job);
     //update metrics
     nFinishedjobs++;
-    
-    responseTime = (responseTime * (nFinishedjobs - 1) + existingJobResponseTime) 
+    inputSize += ((float)job.getInputLength()/(1024 * 1024));
+    //mapInSize += inFormat.get
+    responseTime = (responseTime * (nFinishedjobs - 1) + exitingJobResponseTime) 
     		/ nFinishedjobs;
-    stretch = (stretch * (nFinishedjobs - 1) + existingJobResponseTime / ((float)job.getInputLength()/1024)) 
+    mapResponseTime = (this.mapResponseTime * (nFinishedjobs - 1) + exitingJobMResponseTime)
+    		/ nFinishedjobs;
+    reduceResponseTime = (this.reduceResponseTime * (nFinishedjobs - 1) + exitingJobRResponseTime)
+    		/ nFinishedjobs;
+    stretch = (stretch * (nFinishedjobs - 1) + exitingJobResponseTime / (float)inputSize) 
+    		/ nFinishedjobs;
+    mapStretch = (mapStretch * (nFinishedjobs - 1) + exitingJobMResponseTime / mapInSize) 
+    		/ nFinishedjobs;
+    reduceStretch = (reduceStretch * (nFinishedjobs - 1) + exitingJobRResponseTime / reduceOutSize) 
     		/ nFinishedjobs;
   }
   
@@ -92,6 +124,34 @@ public class Pool {
   
   public float getStretch(){
 	  return stretch;
+  }
+  
+  public float getInputSize(){
+	  return inputSize;
+  }
+  
+  public float getMapInSize(){
+	  return this.mapInSize;
+  }
+  
+  public float getReduceOutSize(){
+	  return this.reduceOutSize;
+  }
+  
+  public float getMapResponseTime(){
+	  return this.mapResponseTime;
+  }
+  
+  public float getReduceResponseTime(){
+	  return this.reduceResponseTime;
+  }
+  
+  public float getMapStretch(){
+	  return this.mapStretch;
+  }
+  
+  public float getReduceStretch(){
+	  return this.reduceStretch;
   }
 
   public SchedulingMode getSchedulingMode() {

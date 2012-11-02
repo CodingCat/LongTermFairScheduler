@@ -14,6 +14,7 @@
 		<maxMaps>4</maxMaps>
 		<maxReduces>4</maxReduces>
 		<minSharePreemptionTimeout>300</minSharePreemptionTimeout>
+		<schedulingMode>fifo</schedulingMode>
 	</pool>
 	<pool name="queue2">
 		<minMaps>2</minMaps>
@@ -21,6 +22,7 @@
 		<maxMaps>4</maxMaps>
 		<maxReduces>4</maxReduces>
 		<minSharePreemptionTimeout>300</minSharePreemptionTimeout>
+		<schedulingMode>fifo</schedulingMode>
 	</pool>
 	<fairSharePreemptionTimeout>60</fairSharePreemptionTimeout>
 	<defaultMinSharePreemptionTimeout>60</defaultMinSharePreemptionTimeout>

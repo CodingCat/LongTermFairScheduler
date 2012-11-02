@@ -158,12 +158,15 @@ public class FairSchedulerServlet extends HttpServlet {
       out.print("<table border=\"2\" cellpadding=\"5\" cellspacing=\"2\">\n");
       out.print("<tr><th rowspan=2>Pool</th>" +
           "<th rowspan=2>Running Jobs</th>" +
-          "<th rowspan=2>Avr. ResponseTime</th>" +
+          "<th rowspan=2>Avr. ResponseTime (Sec.)</th>" +
           "<th rowspan=2>Avr. Stretch</th>" +
+          "<th rowspan=2>Input Size (MB)</th>" +
+          "<th rowspan=2>Map Input Size (MB)</th>" +
+          "<th rowspan=2>Reduce Output Size (MB)</th>" +
           "<th colspan=5>Map Tasks</th>" + 
           "<th colspan=5>Reduce Tasks</th></tr>\n<tr>" +
-          "<th>Min Share</th><th>Max Share</th><th>Running</th><th>Fair Share</th><th>Credits</th>" + 
-          "<th>Min Share</th><th>Max Share</th><th>Running</th><th>Fair Share</th><th>Credits</th></tr>\n");
+          "<th>Avr. Response Time(sec.)</th><th>Avr. Stretch</th><th>Running</th><th>Fair Share</th><th>Credits</th>" + 
+          "<th>Avr. Response Time(sec.)</th><th>Avr. Stretch</th><th>Running</th><th>Fair Share</th><th>Credits</th></tr>\n");
       List<Pool> pools = new ArrayList<Pool>(poolManager.getPools());
       Collections.sort(pools, new Comparator<Pool>() {
         public int compare(Pool p1, Pool p2) {
@@ -185,37 +188,20 @@ public class FairSchedulerServlet extends HttpServlet {
         out.print("<tr>");
         out.printf("<td>%s</td>", name);
         out.printf("<td>%d</td>", pool.getJobs().size());
-        out.printf("<td>%.1f</td>", pool.getResponseTime());
-        out.printf("<td>%.1f</td>", pool.getStretch());
+        out.printf("<td>%f</td>", pool.getResponseTime());
+        out.printf("<td>%f</td>", pool.getStretch());
+        out.printf("<td>%f</td>", pool.getInputSize());
+        out.printf("<td>%f</td>", pool.getMapInSize());
+        out.printf("<td>%f</td>", pool.getReduceOutSize());
         // Map Tasks
-        out.printf("<td>%d</td>", poolManager.getAllocation(name,
-            TaskType.MAP));
-        out.print("<td>");
-        if(maxMaps == Integer.MAX_VALUE) {
-          out.print("-");
-        } else {
-          out.print(maxMaps);
-        }
-        if(invertedMaps) {
-          out.print("*");
-        }
-        out.print("</td>");
+        out.printf("<td>%f</td>", pool.getMapResponseTime());
+        out.printf("<td>%f</td>", pool.getMapStretch());
         out.printf("<td>%d</td>", runningMaps);
         out.printf("<td>%.1f</td>", pool.getMapSchedulable().getFairShare());
         out.printf("<td>%.1f</td>", pool.getCredit(TaskType.MAP));
         // Reduce Tasks
-        out.printf("<td>%d</td>", poolManager.getAllocation(name,
-            TaskType.REDUCE));
-        out.print("<td>");
-        if(maxReduces == Integer.MAX_VALUE) {
-          out.print("-");
-        } else {
-          out.print(maxReduces);
-        }
-        if(invertedReduces) {
-          out.print("*");
-        }
-        out.print("</td>");
+        out.printf("<td>%f</td>", pool.getReduceResponseTime());
+        out.printf("<td>%f</td>", pool.getReduceStretch());
         out.printf("<td>%d</td>", runningReduces);
         out.printf("<td>%.1f</td>", pool.getReduceSchedulable().getFairShare());
         out.printf("<td>%.1f</td>", pool.getCredit(TaskType.REDUCE));
