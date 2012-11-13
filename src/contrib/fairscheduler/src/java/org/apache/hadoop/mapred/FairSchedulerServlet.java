@@ -159,14 +159,14 @@ public class FairSchedulerServlet extends HttpServlet {
       out.print("<tr><th rowspan=2>Pool</th>" +
           "<th rowspan=2>Running Jobs</th>" +
           "<th rowspan=2>Avr. ResponseTime (Sec.)</th>" +
-          "<th rowspan=2>Avr. Stretch</th>" +
+          "<th rowspan=2>Avr. Slowdown</th>" +
           "<th rowspan=2>Input Size (MB)</th>" +
           "<th rowspan=2>Map Input Size (MB)</th>" +
-          "<th rowspan=2>Reduce Output Size (MB)</th>" +
-          "<th colspan=5>Map Tasks</th>" + 
-          "<th colspan=5>Reduce Tasks</th></tr>\n<tr>" +
-          "<th>Avr. Response Time(sec.)</th><th>Avr. Stretch</th><th>Running</th><th>Fair Share</th><th>Credits</th>" + 
-          "<th>Avr. Response Time(sec.)</th><th>Avr. Stretch</th><th>Running</th><th>Fair Share</th><th>Credits</th></tr>\n");
+          "<th rowspan=2>Reduce Input Size (MB)</th>" +
+          "<th colspan=4>Map Tasks</th>" + 
+          "<th colspan=4>Reduce Tasks</th></tr>\n<tr>" +
+          "<th>Avr. Slots.Sec</th><th>Avr. Slowdown</th><th>Fair Share</th><th>Credits</th>" + 
+          "<th>Avr. Slots.Sec</th><th>Avr. Slowdown</th><th>Fair Share</th><th>Credits</th></tr>\n");
       List<Pool> pools = new ArrayList<Pool>(poolManager.getPools());
       Collections.sort(pools, new Comparator<Pool>() {
         public int compare(Pool p1, Pool p2) {
@@ -178,10 +178,6 @@ public class FairSchedulerServlet extends HttpServlet {
         }});
       for (Pool pool: pools) {
         String name = pool.getName();
-        int runningMaps = pool.getMapSchedulable().getRunningTasks();
-        int runningReduces = pool.getReduceSchedulable().getRunningTasks();
-        int maxMaps = poolManager.getMaxSlots(name, TaskType.MAP);
-        int maxReduces = poolManager.getMaxSlots(name, TaskType.REDUCE);
         boolean invertedMaps = poolManager.invertedMinMax(TaskType.MAP, name);
         boolean invertedReduces = poolManager.invertedMinMax(TaskType.REDUCE, name);
         warnInverted = warnInverted || invertedMaps || invertedReduces;
@@ -192,17 +188,15 @@ public class FairSchedulerServlet extends HttpServlet {
         out.printf("<td>%f</td>", pool.getStretch());
         out.printf("<td>%f</td>", pool.getInputSize());
         out.printf("<td>%f</td>", pool.getMapInSize());
-        out.printf("<td>%f</td>", pool.getReduceOutSize());
+        out.printf("<td>%f</td>", pool.getReduceInSize());
         // Map Tasks
         out.printf("<td>%f</td>", pool.getMapResponseTime());
         out.printf("<td>%f</td>", pool.getMapStretch());
-        out.printf("<td>%d</td>", runningMaps);
         out.printf("<td>%.1f</td>", pool.getMapSchedulable().getFairShare());
         out.printf("<td>%.1f</td>", pool.getCredit(TaskType.MAP));
         // Reduce Tasks
         out.printf("<td>%f</td>", pool.getReduceResponseTime());
         out.printf("<td>%f</td>", pool.getReduceStretch());
-        out.printf("<td>%d</td>", runningReduces);
         out.printf("<td>%.1f</td>", pool.getReduceSchedulable().getFairShare());
         out.printf("<td>%.1f</td>", pool.getCredit(TaskType.REDUCE));
         out.print("</tr>\n");

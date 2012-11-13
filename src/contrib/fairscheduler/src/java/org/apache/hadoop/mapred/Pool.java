@@ -53,7 +53,7 @@ public class Pool {
   private int nFinishedjobs = 0;
   private float inputSize = 0;
   private float mapInSize = 0;
-  private float reduceOutSize = 0;
+  private float reduceInSize = 0;
   private float responseTime = 0;
   private float mapResponseTime = 0;
   private float reduceResponseTime = 0;
@@ -85,14 +85,23 @@ public class Pool {
 	isFine = job.getReduceCounters(reduceCounters);
 	reduceCounters = (isFine? reduceCounters : new Counters());
 	
+	float jobminputsize = 0;//job.getInputLength();
+	float jobrinputsize = 0;//job.
 	float exitingJobResponseTime = (job.finishTime - job.startTime)/1000;
-	float exitingJobMResponseTime = mapCounters.getCounter(JobInProgress.Counter.MAPS_RESPONSE_TIME);
-	float exitingJobRResponseTime = reduceCounters.getCounter(JobInProgress.Counter.REDUCE_RESPONSE_TIME);
+	float exitingJobMResponseTime = job.getJobCounters().getCounter(JobInProgress.Counter.SLOTS_MILLIS_MAPS) /
+			1000; 
+			//job.getJobCounters().getCounter(JobInProgress.Counter.SLOTS_MILLIS_MAPS);
+	//mapCounters.getCounter(JobInProgress.Counter.SLOTS_MILLIS_MAPS);
+	float exitingJobRResponseTime = job.getJobCounters().getCounter(JobInProgress.Counter.SLOTS_MILLIS_REDUCES) /
+			1000;
+	//reduceCounters.getCounter(JobInProgress.Counter.SLOTS_MILLIS_REDUCES);
+	jobminputsize = (float)mapCounters.getGroup("FileSystemCounters").getCounter("HDFS_BYTES_READ") / 
+			(float)(1024 * 1024);
+	jobrinputsize = (float)reduceCounters.getGroup("FileSystemCounters").getCounter("FILE_BYTES_WRITTEN") /
+			(float)(1024 * 1024);
 	
-	this.mapInSize += (float)mapCounters.getCounter(FileInputFormat.Counter.BYTES_READ)/
-			(1024*1024);
-	this.reduceOutSize += (float)reduceCounters.getCounter(FileOutputFormat.Counter.BYTES_WRITTEN)/
-			(1024*1024);
+	this.mapInSize += jobminputsize;
+	this.reduceInSize += jobrinputsize;
 	jobs.remove(job);
     mapSchedulable.removeJob(job);
     reduceSchedulable.removeJob(job);
@@ -106,11 +115,11 @@ public class Pool {
     		/ nFinishedjobs;
     reduceResponseTime = (this.reduceResponseTime * (nFinishedjobs - 1) + exitingJobRResponseTime)
     		/ nFinishedjobs;
-    stretch = (stretch * (nFinishedjobs - 1) + exitingJobResponseTime / (float)inputSize) 
+    stretch = (stretch * (nFinishedjobs - 1) + exitingJobResponseTime / (float)jobminputsize) 
     		/ nFinishedjobs;
-    mapStretch = (mapStretch * (nFinishedjobs - 1) + exitingJobMResponseTime / mapInSize) 
+    mapStretch = (mapStretch * (nFinishedjobs - 1) + exitingJobMResponseTime / (float)jobminputsize) 
     		/ nFinishedjobs;
-    reduceStretch = (reduceStretch * (nFinishedjobs - 1) + exitingJobRResponseTime / reduceOutSize) 
+    reduceStretch = (reduceStretch * (nFinishedjobs - 1) + exitingJobRResponseTime / (float)jobrinputsize) 
     		/ nFinishedjobs;
   }
   
@@ -134,8 +143,8 @@ public class Pool {
 	  return this.mapInSize;
   }
   
-  public float getReduceOutSize(){
-	  return this.reduceOutSize;
+  public float getReduceInSize(){
+	  return this.reduceInSize;
   }
   
   public float getMapResponseTime(){

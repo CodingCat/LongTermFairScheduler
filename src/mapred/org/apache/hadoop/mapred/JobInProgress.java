@@ -2536,7 +2536,7 @@ public class JobInProgress {
 		  TaskStatus status) {
 	  Counter PhaseResponseCnt = (tip.isMapTask() ? Counter.MAPS_RESPONSE_TIME :
 			  Counter.REDUCE_RESPONSE_TIME);
-	  if (tip.isMapTask() && this.pendingMaps() == 0){
+	  if (tip.isMapTask() && this.finishedMapTasks == this.numMapTasks){
 		  //last map task successfully end
 		 jobCounters.incrCounter(PhaseResponseCnt, 
 				 (status.getFinishTime() - this.startTime)/1000);
@@ -2551,7 +2551,7 @@ public class JobInProgress {
 						  status.getStartTime());
 				  LOG.warn("CodingCat RStartTime:" + (status.getStartTime()));
 			  }
-			  if (this.pendingReduces() == 0){
+			  if (this.finishedReduceTasks == this.numReduceTasks){
 				  jobCounters.incrCounter(Counter.REDUCE_RESPONSE_TIME, 
 						  (status.getFinishTime() - jobCounters.getCounter(
 								  Counter.REDUCE_START_TIME))/1000);
@@ -2673,44 +2673,46 @@ public class JobInProgress {
       // The job has been killed/failed/successful
       // JobTracker should cleanup this task
       jobtracker.markCompletedTaskAttempt(status.getTaskTracker(), taskid);
-    } else if (tip.isMapTask()) {
-      runningMapTasks -= 1;
-      // check if this was a sepculative task
-      if (oldNumAttempts > 1) {
-        speculativeMapTasks -= (oldNumAttempts - newNumAttempts);
-      }
-      finishedMapTasks += 1;
-      metrics.completeMap(taskid);
-      this.queueMetrics.completeMap(taskid);
-      // remove the completed map from the resp running caches
-      retireMap(tip);
-      if ((finishedMapTasks + failedMapTIPs) == (numMapTasks)) {
-        this.status.setMapProgress(1.0f);
-        if (canLaunchJobCleanupTask()) {
-          checkCounterLimitsAndFail();
-        }
-      }
-    } else {
-      runningReduceTasks -= 1;
-      if (oldNumAttempts > 1) {
-        speculativeReduceTasks -= (oldNumAttempts - newNumAttempts);
-      }
-      finishedReduceTasks += 1;
-      metrics.completeReduce(taskid);
-      this.queueMetrics.completeReduce(taskid);
-      // remove the completed reduces from the running reducers set
-      retireReduce(tip);
-      if ((finishedReduceTasks + failedReduceTIPs) == (numReduceTasks)) {
-        this.status.setReduceProgress(1.0f);
-        if (canLaunchJobCleanupTask()) {
-          checkCounterLimitsAndFail();
-        }
-      }
-    }
-    //Nan
-    LOG.warn("CodingCat: map len:" + maps.length + " reduce len:" + reduces.length);
-    this.updatePhaseResponseTime(tip, status);
-    
+    } else 
+    	{
+			if (tip.isMapTask()) {
+				runningMapTasks -= 1;
+				// check if this was a sepculative task
+				if (oldNumAttempts > 1) {
+					speculativeMapTasks -= (oldNumAttempts - newNumAttempts);
+				}
+				finishedMapTasks += 1;
+				metrics.completeMap(taskid);
+				this.queueMetrics.completeMap(taskid);
+				// remove the completed map from the resp running caches
+				retireMap(tip);
+				if ((finishedMapTasks + failedMapTIPs) == (numMapTasks)) {
+					this.status.setMapProgress(1.0f);
+					if (canLaunchJobCleanupTask()) {
+						checkCounterLimitsAndFail();
+					}
+				}
+			} else {
+				runningReduceTasks -= 1;
+				if (oldNumAttempts > 1) {
+					speculativeReduceTasks -= (oldNumAttempts - newNumAttempts);
+				}
+				finishedReduceTasks += 1;
+				metrics.completeReduce(taskid);
+				this.queueMetrics.completeReduce(taskid);
+				// remove the completed reduces from the running reducers set
+				retireReduce(tip);
+				if ((finishedReduceTasks + failedReduceTIPs) == (numReduceTasks)) {
+					this.status.setReduceProgress(1.0f);
+					if (canLaunchJobCleanupTask()) {
+						checkCounterLimitsAndFail();
+					}
+				}
+			}
+			this.updatePhaseResponseTime(tip, status);
+			//Nan
+		    LOG.warn("CodingCat: map len:" + maps.length + " reduce len:" + reduces.length);
+		}
     return true;
   }
   

@@ -29,6 +29,7 @@
   <property name="Name" value="Hadoop"/>
   <property name="name" value="hadoop"/>
   <property name="version" value="1.0.4-SNAPSHOT"/>
+	<property name="eclipse.home" value="/Users/zhunan/eclipse" />
   <property name="final.name" value="${name}-${version}"/>
   <property name="test.final.name" value="${name}-test-${version}"/>
   <property name="year" value="2009"/>
@@ -614,7 +615,7 @@
   </target>
 
   <target name="create-native-configure">
-    <exec executable="autoreconf" dir="${native.src.dir}" searchpath="yes" 
+    <exec executable="/usr/local/bin/autoreconf" dir="${native.src.dir}" searchpath="yes" 
           failonerror="yes">
        <arg value="-if"/>
     </exec>
