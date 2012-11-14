@@ -28,14 +28,14 @@ import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.apache.hadoop.mapred.FairScheduler.JobInfo;
+import org.apache.hadoop.mapred.CreditScheduler.JobInfo;
 import org.apache.hadoop.mapreduce.TaskType;
 
 public class PoolSchedulable extends Schedulable {
   public static final Log LOG = LogFactory.getLog(
       PoolSchedulable.class.getName());
   
-  private FairScheduler scheduler;
+  private CreditScheduler scheduler;
   private Pool pool;
   private TaskType taskType;
   private PoolManager poolMgr;
@@ -46,7 +46,7 @@ public class PoolSchedulable extends Schedulable {
   long lastTimeAtMinShare;
   long lastTimeAtHalfFairShare;
 
-  public PoolSchedulable(FairScheduler scheduler, Pool pool, TaskType type) {
+  public PoolSchedulable(CreditScheduler scheduler, Pool pool, TaskType type) {
     this.scheduler = scheduler;
     this.pool = pool;
     this.taskType = type;
@@ -59,7 +59,7 @@ public class PoolSchedulable extends Schedulable {
   }
 
   public void addJob(JobInProgress job) {
-    FairScheduler.JobInfo info = scheduler.getJobInfo(job);
+    JobInfo info = scheduler.getJobInfo(job);
     jobScheds.add(taskType == TaskType.MAP ?
         info.mapSchedulable : info.reduceSchedulable);
   }
@@ -123,6 +123,10 @@ public class PoolSchedulable extends Schedulable {
   @Override
   public JobPriority getPriority() {
     return JobPriority.NORMAL;
+  }
+  
+  public float getCredit(TaskType ttype){
+	  return this.pool.getCredit(ttype);
   }
 
   @Override

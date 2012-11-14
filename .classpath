@@ -39,6 +39,7 @@
 	<classpathentry kind="src" path="src/test/system/java/shared"/>
 	<classpathentry kind="src" path="src/test/system/validation"/>
 	<classpathentry kind="src" path="src/tools"/>
+	<classpathentry kind="src" path="src/contrib/creditscheduler/src/java"/>
 	<classpathentry kind="lib" path="build/contrib/eclipse-plugin/hadoop-eclipse-plugin-1.0.0.jar"/>
 	<classpathentry kind="lib" path="build/contrib/eclipse-plugin/hadoop-eclipse-plugin-1.0.0/lib/commons-cli-1.2.jar"/>
 	<classpathentry kind="lib" path="build/contrib/eclipse-plugin/hadoop-eclipse-plugin-1.0.0/lib/hadoop-core.jar"/>

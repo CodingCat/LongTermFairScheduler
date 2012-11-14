@@ -17,7 +17,7 @@
 	</property>
 	<property>
 		<name>mapred.jobtracker.taskScheduler</name>
-		<value>org.apache.hadoop.mapred.FairScheduler</value>
+		<value>org.apache.hadoop.mapred.CreditScheduler</value>
 	</property>
 	<property>
 		<name>mapred.fairscheduler.preemption</name>

@@ -21,15 +21,16 @@ package org.apache.hadoop.mapred;
 import java.io.IOException;
 import java.util.Collection;
 
+import org.apache.hadoop.mapred.CreditScheduler.JobInfo;
 import org.apache.hadoop.mapreduce.TaskType;
 
 public class JobSchedulable extends Schedulable {
-  private FairScheduler scheduler;
+  private CreditScheduler scheduler;
   private JobInProgress job;
   private TaskType taskType;
   private int demand = 0;
 
-  public JobSchedulable(FairScheduler scheduler, JobInProgress job, 
+  public JobSchedulable(CreditScheduler scheduler, JobInProgress job, 
       TaskType taskType) {
     this.scheduler = scheduler;
     this.job = job;
@@ -87,7 +88,7 @@ public class JobSchedulable extends Schedulable {
   }
 
   private boolean isRunnable() {
-    FairScheduler.JobInfo info = scheduler.getJobInfo(job);
+    JobInfo info = scheduler.getJobInfo(job);
     int runState = job.getStatus().getRunState();
     return (info != null && info.runnable && runState == JobStatus.RUNNING);
   }
