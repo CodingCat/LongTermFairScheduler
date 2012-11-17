@@ -689,8 +689,7 @@ public class PoolManager {
 		  else{
 			  gain = Math.max(0, (capacity - allocation) - wasted);
 		  }
-		  pool.updateCredit(ttype, gain * this.creditUpdateInterval); // why /60?
+		  pool.updateCredit(ttype, gain);// * this.creditUpdateInterval); // why /60?
 	  }
-	  
   }
 }

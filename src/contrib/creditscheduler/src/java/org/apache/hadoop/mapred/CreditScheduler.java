@@ -469,7 +469,7 @@ public class CreditScheduler extends TaskScheduler {
 
       // Get the map or reduce schedulables and sort them by fair sharing
       List<PoolSchedulable> scheds = getPoolSchedulables(taskType);
-      Collections.sort(scheds, new SchedulingAlgorithms.FairShareComparator());
+      Collections.sort(scheds, new SchedulingAlgorithms.CreditComparator(taskType));
       boolean foundTask = false;
       for (Schedulable sched: scheds) { // This loop will assign only one task
         eventLog.log("INFO", "Checking for " + taskType +
