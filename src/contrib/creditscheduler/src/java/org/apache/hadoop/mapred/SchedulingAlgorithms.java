@@ -63,31 +63,18 @@ class SchedulingAlgorithms {
   }
   
   
-  public static class CreditBasedPoolSorting {
-	
-	public List<PoolSchedulable> sorting(List<PoolSchedulable> scheds, 
-			TaskType taskType){
-		ArrayList<PoolSchedulable> ret = new ArrayList<PoolSchedulable>();
-		//sort the under-allocated pools
-		for (PoolSchedulable sched : scheds){
-			if (sched.getPool().getRunningTasks(taskType) < sched.getMinShare()) {
-				ret.add(sched);
-			}
+	public static class SlotsComparator implements Comparator<PoolSchedulable> {
+		TaskType taskType;
+
+		public SlotsComparator(TaskType ttype) {
+			taskType = ttype;
 		}
-		//sort the remaining pools until their running task number is equal to 
-		//the minimum share
-		Collections.sort(scheds, new CreditComparator(taskType));
-	    for (PoolSchedulable sched : scheds){
-	    	if (sched.getPool().getRunningTasks(taskType) < sched.getMinShare()) {
-	    		break;
-	    	}
-	    	else {
-	    		ret.add(sched);
-	    	}
-	    }
-		return ret;
-	}
-  }
+
+		@Override
+		public int compare(PoolSchedulable p1, PoolSchedulable p2) {
+			return (p1.getSlotsGap() - p2.getSlotsGap() > 0) ? -1 : 1;
+		}
+	}  
   
   /**
    * Compare Schedulables in order of priority and then submission time, as in

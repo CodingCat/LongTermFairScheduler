@@ -137,6 +137,10 @@ public class PoolSchedulable extends Schedulable {
     }
     return ans;
   }
+  
+  public int getSlotsGap() {
+	  return getRunningTasks() - getMinShare(); 
+  }
 
   @Override
   public long getStartTime() {
