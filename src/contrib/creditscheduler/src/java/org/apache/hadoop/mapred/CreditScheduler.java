@@ -42,6 +42,7 @@ import org.apache.hadoop.metrics.MetricsContext;
 import org.apache.hadoop.metrics.MetricsUtil;
 import org.apache.hadoop.metrics.Updater;
 import org.apache.hadoop.util.ReflectionUtils;
+import org.apache.hadoop.mapred.SchedulingAlgorithms;
 
 /**
  * A {@link TaskScheduler} that implements fair sharing.
@@ -469,7 +470,8 @@ public class CreditScheduler extends TaskScheduler {
 
       // Get the map or reduce schedulables and sort them by fair sharing
       List<PoolSchedulable> scheds = getPoolSchedulables(taskType);
-      Collections.sort(scheds, new SchedulingAlgorithms.CreditComparator(taskType));
+      //Collections.sort(scheds, new SchedulingAlgorithms.CreditComparator(taskType));
+      scheds = new SchedulingAlgorithms.CreditBasedPoolSorting().sorting(scheds, taskType);
       boolean foundTask = false;
       for (Schedulable sched: scheds) { // This loop will assign only one task
         eventLog.log("INFO", "Checking for " + taskType +

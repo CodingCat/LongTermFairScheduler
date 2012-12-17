@@ -192,9 +192,9 @@ public class PoolManager {
     if (allocFile == null) {
       // No allocation file specified in jobconf. Use the default allocation
       // file, fair-scheduler.xml, looking for it on the classpath.
-      allocFile = new Configuration().getResource("fair-scheduler.xml");
+      allocFile = new Configuration().getResource("credit-scheduler.xml");
       if (allocFile == null) {
-        LOG.error("The fair scheduler allocation file fair-scheduler.xml was "
+        LOG.error("The credit scheduler allocation file credit-scheduler.xml was "
             + "not found on the classpath, and no other config file is given "
             + "through mapred.fairscheduler.allocation.file.");
       }

@@ -18,8 +18,11 @@
 
 package org.apache.hadoop.mapred;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -48,7 +51,7 @@ class SchedulingAlgorithms {
     @Override
     public int compare(PoolSchedulable s1, PoolSchedulable s2) {
       int res = 0;
-      res = (s1.getCredit(tasktype) - s2.getCredit(tasktype) > 0) ? 1 : 0;
+      res = (s1.getCredit(tasktype) - s2.getCredit(tasktype) > 0) ? -1 : 1;
       if (res == 0) {
         // In the rare case where jobs were submitted at the exact same time,
         // compare them by name (which will be the JobID) to get a deterministic
@@ -57,6 +60,33 @@ class SchedulingAlgorithms {
       }
       return res;
     }
+  }
+  
+  
+  public static class CreditBasedPoolSorting {
+	
+	public List<PoolSchedulable> sorting(List<PoolSchedulable> scheds, 
+			TaskType taskType){
+		ArrayList<PoolSchedulable> ret = new ArrayList<PoolSchedulable>();
+		//sort the under-allocated pools
+		for (PoolSchedulable sched : scheds){
+			if (sched.getPool().getRunningTasks(taskType) < sched.getMinShare()) {
+				ret.add(sched);
+			}
+		}
+		//sort the remaining pools until their running task number is equal to 
+		//the minimum share
+		Collections.sort(scheds, new CreditComparator(taskType));
+	    for (PoolSchedulable sched : scheds){
+	    	if (sched.getPool().getRunningTasks(taskType) < sched.getMinShare()) {
+	    		break;
+	    	}
+	    	else {
+	    		ret.add(sched);
+	    	}
+	    }
+		return ret;
+	}
   }
   
   /**
