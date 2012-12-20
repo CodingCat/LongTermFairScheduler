@@ -656,7 +656,10 @@ public class PoolManager {
 	  LOG.warn(ttype.toString() + " totalCapacity:" + totalCapacity + 
 			  " totalDemand:" + totalDemand + 
 			  " poolCapacity:" + poolCapacity + 
-			  " poolAllocation:" + poolAllocation);
+			  " poolAllocation:" + poolAllocation + 
+			  " oldWasted:" + oldWasted + 
+			  " newDemand:" + newDemand + 
+			  " newCapacity:" + newCapacity);
 	  if (newDemand > newCapacity) {
 		  // still someone can use more machines
 		  return Math.max(0, poolAllocation + oldWasted - (newDemand - newCapacity));

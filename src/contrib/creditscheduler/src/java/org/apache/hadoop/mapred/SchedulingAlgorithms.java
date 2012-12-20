@@ -50,15 +50,7 @@ class SchedulingAlgorithms {
 	  
     @Override
     public int compare(PoolSchedulable s1, PoolSchedulable s2) {
-      int res = 0;
-      res = (s1.getCredit(tasktype) - s2.getCredit(tasktype) > 0) ? -1 : 1;
-      if (res == 0) {
-        // In the rare case where jobs were submitted at the exact same time,
-        // compare them by name (which will be the JobID) to get a deterministic
-        // ordering, so we don't alternately launch tasks from different jobs.
-        res = s1.getName().compareTo(s2.getName());
-      }
-      return res;
+      return (int)(s2.getCredit(tasktype) - s1.getCredit(tasktype));
     }
   }
   
@@ -72,7 +64,7 @@ class SchedulingAlgorithms {
 
 		@Override
 		public int compare(PoolSchedulable p1, PoolSchedulable p2) {
-			return (p1.getSlotsGap() - p2.getSlotsGap() > 0) ? -1 : 1;
+			return p2.getSlotsGap() - p1.getSlotsGap();
 		}
 	}  
   
