@@ -471,9 +471,23 @@ public class CreditScheduler extends TaskScheduler {
       // Get the map or reduce schedulables and sort them by fair sharing
       List<PoolSchedulable> scheds = getPoolSchedulables(taskType);
       Collections.sort(scheds, new SchedulingAlgorithms.SlotsComparator(taskType));
-      if (scheds.get(0).getSlotsGap() > 0) {
-    	  Collections.sort(scheds, new SchedulingAlgorithms.CreditComparator(taskType));
+      
+      
+//      boolean sortByCredits = false;
+      for (PoolSchedulable poolsched : scheds) {
+    	  if (poolsched.getDemand() > 0) {
+    		  if (poolsched.getSlotsGap() >= 0) { 
+    			  //if the first pool whose demand has been over the minimum share
+    			  //we believe that we should give resources
+    			  Collections.sort(scheds, new SchedulingAlgorithms.CreditComparator(taskType));
+    			  LOG.warn("largest credit owner:" + scheds.get(0).toString() + ":" + 
+    					  scheds.get(0).getSlotsGap());
+    		  }
+    		  break;
+    	  }
       }
+      
+      
       boolean foundTask = false;
       for (Schedulable sched: scheds) { // This loop will assign only one task
         eventLog.log("INFO", "Checking for " + taskType +

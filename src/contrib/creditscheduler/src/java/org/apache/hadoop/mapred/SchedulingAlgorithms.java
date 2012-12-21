@@ -64,7 +64,7 @@ class SchedulingAlgorithms {
 
 		@Override
 		public int compare(PoolSchedulable p1, PoolSchedulable p2) {
-			return p2.getSlotsGap() - p1.getSlotsGap();
+			return p1.getSlotsGap() - p2.getSlotsGap();
 		}
 	}  
   
