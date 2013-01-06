@@ -654,7 +654,8 @@ public class PoolManager {
 	  int newDemand = totalDemand - poolDemand;
 	  int newCapacity = totalCapacity - poolCapacity;
 	  LOG.warn(ttype.toString() + " totalCapacity:" + totalCapacity + 
-			  " totalDemand:" + totalDemand + 
+			  " totalDemand:" + totalDemand +
+			  " poolDemand:" + poolDemand + 
 			  " poolCapacity:" + poolCapacity + 
 			  " poolAllocation:" + poolAllocation);
 	  if (newDemand > newCapacity) {
@@ -680,7 +681,10 @@ public class PoolManager {
 					  pool.getRunningTasks(TaskType.REDUCE));
 		  int capacity = (ttype == TaskType.MAP ? 
 				  getCapacity(pool.getName(), TaskType.MAP) : getCapacity(pool.getName(), TaskType.REDUCE));
-		  LOG.warn(ttype.toString() + " " + pool.getName() + " wasted:" + wasted + " allocation:" + allocation + 
+		  LOG.warn(ttype.toString() + 
+				  " " + pool.getName() + 
+				  " wasted:" + wasted + 
+				  " allocation:" + allocation + 
 				   " capacity:" + capacity);
 		  if (allocation > capacity){
 			  gain = Math.max(0,  (allocation - capacity) - wasted);
